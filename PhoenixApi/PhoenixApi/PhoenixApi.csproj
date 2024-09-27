@@ -14,4 +14,9 @@
     <ProjectReference Include="..\PhoenixApi.ServiceDefaults\PhoenixApi.ServiceDefaults.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

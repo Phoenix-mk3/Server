@@ -1,4 +1,4 @@
-namespace PhoenixApi;
+namespace PhoenixApi.Models;
 
 public class WeatherForecast
 {
