@@ -1,0 +1,13 @@
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\bin\Debug\net8.0\PhoenixApi.ServiceDefaults.deps.json
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\bin\Debug\net8.0\PhoenixApi.ServiceDefaults.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\bin\Debug\net8.0\PhoenixApi.ServiceDefaults.pdb
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.AssemblyInfo.cs
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.sourcelink.json
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\refint\PhoenixApi.ServiceDefaults.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\PhoenixApi.ServiceDefaults.pdb
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.ServiceDefaults\obj\Debug\net8.0\ref\PhoenixApi.ServiceDefaults.dll
