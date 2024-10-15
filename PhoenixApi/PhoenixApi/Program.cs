@@ -1,3 +1,7 @@
+using PhoenixApi.Data;
+
+Thread.Sleep(10000);
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
@@ -9,7 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.AddNpgsqlDbContext<ApiDbContext>("ApiDb");
+
+
 var app = builder.Build();
+
 
 app.MapDefaultEndpoints();
 
@@ -25,5 +33,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.CreateDbIfNotExists();
 
 app.Run();
