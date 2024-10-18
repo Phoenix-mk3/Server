@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R8Sa6QWMQyQ=",
+  "dgSpecHash": "mGPo3VohdZw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationTests.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

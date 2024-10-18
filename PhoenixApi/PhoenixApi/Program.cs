@@ -1,3 +1,4 @@
+using PhoenixApi.Services;
 using PhoenixApi.Data;
 
 Thread.Sleep(10000);
@@ -9,6 +10,8 @@ builder.AddServiceDefaults();
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

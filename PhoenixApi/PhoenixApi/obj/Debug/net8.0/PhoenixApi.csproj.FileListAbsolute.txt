@@ -1,4 +1,3 @@
-C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\appsettings.json
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\PhoenixApi.exe
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\PhoenixApi.deps.json
@@ -151,3 +150,20 @@ C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Micros
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Npgsql.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Npgsql.DependencyInjection.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\Npgsql.OpenTelemetry.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

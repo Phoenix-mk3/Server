@@ -107,3 +107,8 @@ C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Aspire.Hosting.PostgreSQL.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

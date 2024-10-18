@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using PhoenixApi.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -15,11 +16,13 @@ namespace PhoenixApi.Controllers
     [Route("api/[controller]")]
     public class AuthenticationController : ControllerBase
     {
+        private readonly IAuthenticationService _authService;
         private readonly IConfiguration _configuration;
         private readonly ApiDbContext _context;
 
-        public AuthenticationController(IConfiguration configuration, ApiDbContext context)
+        public AuthenticationController(IAuthenticationService authService, IConfiguration configuration, ApiDbContext context)
         {
+            _authService = authService;
             _configuration = configuration;
             _context = context;
         }
@@ -38,24 +41,16 @@ namespace PhoenixApi.Controllers
             }
 
             // Generate a JWT token for the hub
-            var token = GenerateJwtToken(hub.HubId);
-
-            return Ok(new { AccessToken = token });
-        }
-
-        private string GenerateJwtToken(Guid hubId)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["JwtSecretKey"]); // Secret key for signing JWT
-            var tokenDescriptor = new SecurityTokenDescriptor
+            try
             {
-                Subject = new ClaimsIdentity(new[] { new Claim("hubId", hubId.ToString()) }),
-                Expires = DateTime.UtcNow.AddMinutes(30), // Token expiration
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+                var token = _authService.GenerateJwtToken(hub.HubId);
+                return Ok(new { AccessToken = token });
+            }
+            catch (Exception ex) 
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token); // Return the JWT as a string
         }
 
         private bool VerifyClientSecret(string providedSecret, string storedHashedSecret)
