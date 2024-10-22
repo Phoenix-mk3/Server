@@ -1,6 +1,6 @@
 using PhoenixApi.Services;
 using PhoenixApi.Data;
-using PhoenixApi;
+using PhoenixApi.Repositories;
 
 Thread.Sleep(10000);
 

@@ -3,13 +3,13 @@ using PhoenixApi.Controllers;
 using PhoenixApi.Data;
 using PhoenixApi.Models;
 
-namespace PhoenixApi
+namespace PhoenixApi.Repositories
 {
     public interface IAuthenticationRepository
     {
         Hub GetHub(HubLoginDto loginDto);
     }
-    public class AuthenticationRepository(ApiDbContext context, ILogger<AuthenticationRepository> logger): IAuthenticationRepository
+    public class AuthenticationRepository(ApiDbContext context, ILogger<AuthenticationRepository> logger) : IAuthenticationRepository
     {
         public Hub GetHub(HubLoginDto loginDto)
         {
