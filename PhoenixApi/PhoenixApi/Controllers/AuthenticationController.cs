@@ -17,50 +17,35 @@ namespace PhoenixApi.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authService;
+        private readonly IAuthenticationRepository _authRepository;
         private readonly IConfiguration _configuration;
         private readonly ApiDbContext _context;
 
-        public AuthenticationController(IAuthenticationService authService, IConfiguration configuration, ApiDbContext context)
+        public AuthenticationController(IAuthenticationService authService, IAuthenticationRepository authRepo, IConfiguration configuration)
         {
+            _authRepository = authRepo;
             _authService = authService;
             _configuration = configuration;
-            _context = context;
         }
 
-        // Endpoint to authenticate a hub and generate a JWT token
         [HttpPost("login")]
         public async Task<IActionResult> AuthenticateHub([FromBody] HubLoginDto loginDto)
         {
-            
-            // Find the hub by clientId
-            var hub = await _context.Hubs.SingleOrDefaultAsync(h => h.ClientId == loginDto.ClientId && h.IsActive);
+            var hub = _authRepository.GetHub(loginDto);
 
-            if (hub == null)
+            if (hub == null || !_authService.ClientSecretIsValid(loginDto))
             {
-                return Unauthorized(); // Return 401 Unauthorized if client ID or secret is invalid
+                return Unauthorized();
             }
 
-            // Generate a JWT token for the hub
             try
             {
                 var token = _authService.GenerateJwtToken(hub.HubId);
                 return Ok(new { AccessToken = token });
             }
-            catch (Exception ex) 
+            catch 
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-
-        }
-
-        private bool VerifyClientSecret(string providedSecret, string storedHashedSecret)
-        {
-            // Compare provided client secret with the hashed version in the database
-            using (var sha256 = SHA256.Create())
-            {
-                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(providedSecret));
-                var hashedSecret = Convert.ToBase64String(hashedBytes);
-                return hashedSecret == storedHashedSecret;
             }
         }
     }

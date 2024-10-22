@@ -9,9 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixApi.AppHost", "Phoen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixApi.ServiceDefaults", "PhoenixApi.ServiceDefaults\PhoenixApi.ServiceDefaults.csproj", "{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationTests", "AuthenticationTests\AuthenticationTests.csproj", "{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationTests", "AuthenticationTests\AuthenticationTests.csproj", "{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{523E329E-FD23-4165-9ECD-22DEC5912E5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{AB0D866E-C246-430F-8A87-D4A17515B62A}"
+	ProjectSection(SolutionItems) = preProject
+		PhoenixApi\AuthenticationRepository.cs = PhoenixApi\AuthenticationRepository.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,6 @@
 using PhoenixApi.Services;
 using PhoenixApi.Data;
+using PhoenixApi;
 
 Thread.Sleep(10000);
 
@@ -12,6 +13,7 @@ builder.AddServiceDefaults();
 builder.Services.AddControllers();
 
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
+builder.Services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

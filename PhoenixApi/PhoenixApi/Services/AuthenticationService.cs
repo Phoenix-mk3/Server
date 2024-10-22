@@ -1,4 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using PhoenixApi.Controllers;
+using PhoenixApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -9,8 +11,9 @@ namespace PhoenixApi.Services
     public interface IAuthenticationService
     {
         string GenerateJwtToken(Guid hubId);
+        bool ClientSecretIsValid(HubLoginDto hubLoginDto);
     }
-    public class AuthenticationService(IConfiguration config, ILogger<AuthenticationService> logger) : IAuthenticationService
+    public class AuthenticationService(IAuthenticationRepository authRepo, IConfiguration config, ILogger<AuthenticationService> logger): IAuthenticationService
     {
         public string GenerateJwtToken(Guid hubId)
         {
@@ -33,6 +36,14 @@ namespace PhoenixApi.Services
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+        public bool ClientSecretIsValid(HubLoginDto loginDto)
+        {
+            Hub hub = authRepo.GetHub(loginDto);
+
+            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(loginDto.ClientSecret));
+            var hashedSecret = Convert.ToBase64String(hashedBytes);
+            return hashedSecret == hub.ClientSecret;
         }
     }
 }
