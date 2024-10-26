@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "PhoenixApi.Controllers.AuthenticationController",
+    "Method": "GetHubCredentials",
+    "RelativePath": "api/Authentication/get-hub-credentials/{hubId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hubId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.AuthenticationController",
     "Method": "AuthenticateHub",
     "RelativePath": "api/Authentication/login",
     "HttpMethod": "POST",

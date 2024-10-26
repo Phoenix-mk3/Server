@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PhoenixApi.Models;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace PhoenixApi.Data
 {
@@ -40,12 +42,19 @@ namespace PhoenixApi.Data
             {
                 HubId = Guid.NewGuid(),
                 ClientId = "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-                ClientSecret = "testing1"
+                ClientSecret = HashSecret("testing1")
             };
 
             context.Add(newHub);
 
             context.SaveChanges();
+        }
+
+        private static string HashSecret(string secret)
+        {
+            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(secret));
+            var hashedSecret = Convert.ToBase64String(hashedBytes);
+            return hashedSecret;
         }
     }
 }
