@@ -2,6 +2,8 @@
 using PhoenixApi.Repositories;
 using PhoenixApi.UnitofWork;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -11,6 +13,7 @@ namespace PhoenixApi.Services
     {
         Task CreateHubAsync(string name = null);
         Task<IEnumerable<Hub>> GetAllHubsAsync();
+        Task UpdateHubName(string name, ClaimsPrincipal claims);
     }
     public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork) : IHubService
     {
@@ -37,6 +40,31 @@ namespace PhoenixApi.Services
         {
             await hubRepository.UpdateAsync(hubId, hub);
             await unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task UpdateHubName(string name, ClaimsPrincipal claims)
+        {
+            Guid hubId = GetHubIdFromClaims(claims);
+
+            await hubRepository.UpdateNameAsync(hubId, name);
+            await unitOfWork.SaveChangesAsync();
+        }
+
+        private Guid GetHubIdFromClaims(ClaimsPrincipal claims)
+        {
+            if (claims == null)
+            {
+                throw new ArgumentNullException(nameof(claims));
+            }
+
+            var hubIdClaim = claims.FindFirst(ClaimTypes.NameIdentifier) ?? claims.FindFirst(JwtRegisteredClaimNames.Sub);
+
+            if (hubIdClaim != null && Guid.TryParse(hubIdClaim.Value, out Guid hubId))
+            {
+                return hubId;
+            }
+            throw new ArgumentNullException(nameof(hubId));
+
         }
     }
 }

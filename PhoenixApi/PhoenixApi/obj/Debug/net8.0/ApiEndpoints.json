@@ -56,5 +56,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.HubController",
+    "Method": "UpdateName",
+    "RelativePath": "api/Hub/update-name",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

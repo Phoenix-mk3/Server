@@ -33,7 +33,7 @@ namespace AuthenticationTests
                 .ReturnsAsync(hub);
             _mockAuthService.Setup(service => service.ClientSecretIsValid(loginDto))
                 .ReturnsAsync(true);
-            _mockAuthService.Setup(service => service.GenerateJwtToken(hub.HubId))
+            _mockAuthService.Setup(service => service.GenerateJwtTokenWithHubId(hub.HubId))
                 .ReturnsAsync(token);
 
 
@@ -89,7 +89,7 @@ namespace AuthenticationTests
                  .ReturnsAsync(hub);
             _mockAuthService.Setup(service => service.ClientSecretIsValid(loginDto))
                 .ReturnsAsync(true);
-            _mockAuthService.Setup(service => service.GenerateJwtToken(hub.HubId))
+            _mockAuthService.Setup(service => service.GenerateJwtTokenWithHubId(hub.HubId))
                 .ThrowsAsync(new Exception("Some error occurred"));
 
             var result = await _authController.AuthenticateHub(loginDto);

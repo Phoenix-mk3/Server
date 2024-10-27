@@ -3,60 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.clientsecretisvalid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.clientsecretisvalid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.updatehubwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.updatehubwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.gethubbyclientid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.gethubbyclientid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.gethubbyclientid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.gethubbyclientid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.updatehubwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.updatehubwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.clientsecretisvalid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.clientsecretisvalid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.servicedefaults\\phoenixapi.servicedefaults.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -126,21 +126,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticationControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationControllerTests.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
-              "RelativeToolTip": "AuthenticationTests\\AuthenticationControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:39:49.201Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -151,20 +138,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationServiceTests.UpdateHubWithCredentials.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AuthenticationServiceTests.GetHubByClientId.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
+              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:18:44.041Z",
+              "WhenOpened": "2024-10-27T15:12:01.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "AuthenticationServiceTests.GenerateHubCredentials.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
@@ -173,6 +160,32 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T15:17:58.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthenticationControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationControllerTests.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
+              "RelativeToolTip": "AuthenticationTests\\AuthenticationControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:39:49.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationServiceTests.UpdateHubWithCredentials.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
+              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:18:44.041Z",
               "EditorCaption": ""
             },
             {
@@ -190,163 +203,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationServiceTests.ClientSecretIsValid.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:15:06.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthenticationServiceTests.GetHubByClientId.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
-              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:12:01.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
-              "RelativeToolTip": "PhoenixApi\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABUAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:55:35.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwC8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:58:33.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthenticationServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationServiceTests.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationServiceTests.cs",
               "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationServiceTests.cs",
               "RelativeToolTip": "AuthenticationTests\\AuthenticationServiceTests.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T09:40:49.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Hub.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Hub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAEwEwAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:58:16.588Z",
+              "WhenOpened": "2024-10-15T09:58:33.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "PhoenixApi\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
-              "RelativeToolTip": "PhoenixApi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-27T07:08:30.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "RelativeToolTip": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:33:01.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HubRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T02:31:03.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HubController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T04:16:25.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApiDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Data\\ApiDbContext.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
-              "RelativeToolTip": "PhoenixApi\\Data\\ApiDbContext.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:55:49.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HubService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T06:01:08.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AuthenticationExtensions.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
@@ -359,7 +242,137 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hub.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Hub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:58:16.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HubService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:01:08.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthenticationServiceTests.ClientSecretIsValid.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
+              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.ClientSecretIsValid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:15:06.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HubRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T02:31:03.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HubController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowCAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T04:16:25.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T17:12:05.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
+              "RelativeToolTip": "PhoenixApi\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:55:35.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PhoenixApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
+              "RelativeToolTip": "PhoenixApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-27T07:08:30.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "RelativeToolTip": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T11:33:01.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Data\\ApiDbContext.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
+              "RelativeToolTip": "PhoenixApi\\Data\\ApiDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:55:49.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.json",
               "RelativeDocumentMoniker": "PhoenixApi\\appsettings.json",
@@ -411,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Program.cs",
@@ -498,40 +511,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:55:32.262Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "63f9d342-db28-4bae-b2a4-e7db7d013ba1",
-        "Display": 0,
-        "X": 1089,
-        "Y": 226,
-        "Width": 2060,
-        "Height": 1130,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAMwBgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:34:26.365Z",
               "EditorCaption": ""
             }
           ]

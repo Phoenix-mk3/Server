@@ -45,7 +45,7 @@ namespace PhoenixApi.Controllers
 
             try
             {
-                var token = await _authService.GenerateJwtToken(hub.HubId);
+                var token = await _authService.GenerateJwtTokenWithHubId(hub.HubId);
                 var expiration = DateTime.UtcNow.AddHours(12);
 
                 var response = new AuthResponse

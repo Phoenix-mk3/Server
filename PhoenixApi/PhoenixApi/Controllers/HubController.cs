@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PhoenixApi.Services;
+using System.Security.Claims;
 
 namespace PhoenixApi.Controllers
 {
@@ -22,6 +23,14 @@ namespace PhoenixApi.Controllers
         public async Task<IActionResult> Create([FromBody] string name)
         {
             await hubService.CreateHubAsync(name);
+            return Ok();
+        }
+
+        [HttpPut("update-name")]
+        [Authorize(Roles = "Hub, User")]
+        public async Task<IActionResult> UpdateName([FromBody] string name)
+        {
+            await hubService.UpdateHubName(name, User);
             return Ok();
         }
     }

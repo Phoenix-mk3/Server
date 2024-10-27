@@ -14,7 +14,7 @@ namespace PhoenixApi.Services
 {
     public interface IAuthenticationService
     {
-        Task<string> GenerateJwtToken(Guid hubId);
+        Task<string> GenerateJwtTokenWithHubId(Guid hubId);
         Task<bool> ClientSecretIsValid(HubLoginDto hubLoginDto);
         Task<Hub> GetHubByClientId(Guid clientId);
         HubLoginDto GenerateHubCredentials();
@@ -22,7 +22,7 @@ namespace PhoenixApi.Services
     }
     public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger, IUnitOfWork unitOfWork): IAuthenticationService
     {
-        public async Task<string> GenerateJwtToken(Guid hubId)
+        public async Task<string> GenerateJwtTokenWithHubId(Guid hubId)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var signingKey = config["Jwt:SecretKey"] ?? null;
