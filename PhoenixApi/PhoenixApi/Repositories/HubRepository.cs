@@ -22,16 +22,8 @@ namespace PhoenixApi.Repositories
 
         public async Task<Hub> GetHubByClientIdAsync(Guid clientId)
         {
-            try
-            {
-                Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId && h.IsActive) ?? throw new KeyNotFoundException($"Hub with client id {clientId} not found");
-                return hub;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning("Unable to find hub with client id {clientId}, error: {error}", clientId, ex);
-                throw;
-            }
+            Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId && h.IsActive);
+            return hub;
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using PhoenixApi.Repositories;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Authentication.OAuth;
 
 namespace PhoenixApi.Controllers
 {
@@ -19,40 +20,50 @@ namespace PhoenixApi.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authService;
-        private readonly IHubService _hubService;
-        private readonly IConfiguration _configuration;
         private readonly ILogger<AuthenticationController> _logger;
 
-        public AuthenticationController(IAuthenticationService authService, IConfiguration configuration, ILogger<AuthenticationController> logger)
+        public AuthenticationController(IAuthenticationService authService, ILogger<AuthenticationController> logger)
         {
             _authService = authService;
-            _configuration = configuration;
             _logger = logger;
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> AuthenticateHub([FromBody] HubLoginDto loginDto)
         {
+            if (loginDto == null)
+            {
+                return BadRequest("Request body cannot be null");
+            }
+
             var hub = await _authService.GetHubByClientId(loginDto.ClientId);
 
             if (hub == null || !await _authService.ClientSecretIsValid(loginDto))
             {
-                return Unauthorized();
+                return Unauthorized("Invalid login");
             }
 
             try
             {
                 var token = await _authService.GenerateJwtToken(hub.HubId);
-                return Ok(new { AccessToken = token });
+                var expiration = DateTime.UtcNow.AddHours(12);
+
+                var response = new AuthResponse
+                {
+                    AccessToken = token,
+                    Expiration = expiration,
+                };
+
+                return Ok(response);
             }
             catch
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
-        
-        [HttpGet("get-hub-credentials/{hubId}")]
-        public async Task<IActionResult> GetHubCredentials(Guid hubId)
+
+        [HttpGet("hub-credentials")]
+        public async Task<IActionResult> GetHubCredentials([FromQuery] Guid hubId)
         {
             HubLoginDto login;
             try
@@ -66,17 +77,17 @@ namespace PhoenixApi.Controllers
                 _logger.LogWarning(ex, "Could not find hub with id {hubId}", hubId);
                 return NotFound("Hub not found or inactive.");
             }
-            catch (DuplicateClientInfoException ex) 
+            catch (DuplicateClientInfoException ex)
             {
                 _logger.LogWarning(ex, "Attempted to set ClientId or ClientSecret more than once for hub {HubId}", hubId);
                 return Conflict("ClientId or Secret already exists for this hub.");
             }
-
-            return Ok(new
+            catch (Exception ex)
             {
-                login.ClientId,
-                login.ClientSecret
-            });
+                _logger.LogWarning("Internal error during 'Get Hub Credentials'. {ex} ", ex);
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+            return Ok(login);
         }
     }
     public class HubLoginDto
@@ -84,6 +95,11 @@ namespace PhoenixApi.Controllers
         public required Guid ClientId { get; set; }
         public required string ClientSecret { get; set; }
     }
+    public class AuthResponse
+    {
+        public string AccessToken { get; set; }
+        public DateTime Expiration { get; set; }
+    }
 
-    
+
 }

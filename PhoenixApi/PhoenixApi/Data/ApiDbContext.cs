@@ -40,7 +40,7 @@ namespace PhoenixApi.Data
 
             Hub newHub = new()
             {
-                HubId = Guid.NewGuid(),
+                HubId = Guid.Parse("cbb69446-b121-4549-a4eb-b8d7384072c2"),
                 ClientId = Guid.Parse("3fa85f64-5717-4562-b3fc-2c963f66afa6"),
                 ClientSecret = HashSecret("testing1")
             };

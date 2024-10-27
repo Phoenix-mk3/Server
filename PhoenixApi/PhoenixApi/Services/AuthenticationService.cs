@@ -1,9 +1,11 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using PhoenixApi.Controllers;
 using PhoenixApi.Models;
 using PhoenixApi.Repositories;
 using PhoenixApi.UnitofWork;
 using System.IdentityModel.Tokens.Jwt;
+using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -23,23 +25,48 @@ namespace PhoenixApi.Services
         public async Task<string> GenerateJwtToken(Guid hubId)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var signingKey = config["JwtSecretKey"] ?? null;
+            var signingKey = config["Jwt:SecretKey"] ?? null;
             if (signingKey == null)
             {
                 logger.LogError("Signing not found. {signKeyStatus}", signingKey);
                 throw new ArgumentNullException(nameof(signingKey));
             }
             logger.LogInformation("Retrieved Signing key");
-            logger.LogDebug("{signingKey}", signingKey);
-            var key = Encoding.ASCII.GetBytes(signingKey); // Secret key for signing JWT
-            var tokenDescriptor = new SecurityTokenDescriptor
+
+            var jti = Guid.NewGuid();
+
+            var claims = new List<Claim>
             {
-                Subject = new ClaimsIdentity([new Claim("hubId", hubId.ToString())]),
-                Expires = DateTime.UtcNow.AddHours(12), // Token expiration
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                new(JwtRegisteredClaimNames.Sub, hubId.ToString()),
+                new(JwtRegisteredClaimNames.Jti, jti.ToString()),
+                new(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+                new(ClaimTypes.Role, "Hub")
             };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
+
+            //TESTING PURPOSES ONLY, REMOVE LATER)
+            if (hubId.ToString() == "cbb69446-b121-4549-a4eb-b8d7384072c2")
+            {
+                claims.Add(new Claim("Permission", "IsAdmin"));
+            }
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var expiration = DateTime.UtcNow.AddHours(12);
+
+            var token = new JwtSecurityToken(
+                issuer: config["Jwt:Issuer"],
+                audience: config["Jwt:Audience"],
+                claims: claims,
+                notBefore: DateTime.UtcNow,
+                expires: expiration,
+                signingCredentials: creds
+                );
+
+            logger.LogInformation("New key generated with id '{jti}', for hub '{hubId}'. Expires at: {expr}", jti, hubId, expiration);
+
+
             return tokenHandler.WriteToken(token);
         }
         public async Task<bool> ClientSecretIsValid(HubLoginDto loginDto)
@@ -54,6 +81,11 @@ namespace PhoenixApi.Services
         public async Task<Hub> GetHubByClientId(Guid clientId)
         {
             Hub hub = await hubRepository.GetHubByClientIdAsync(clientId);
+            if (hub == null)
+            {
+                logger.LogWarning("Hub with client id '{clientId}' not found in Database", clientId);
+                throw new KeyNotFoundException($"Hub with client id {clientId} not found");
+            }
             return hub;
         }
 
@@ -101,7 +133,10 @@ namespace PhoenixApi.Services
         }
     }
     
-    public class DuplicateClientInfoException(string message) : Exception(message)
+    public class DuplicateClientInfoException : Exception
     {
+        public DuplicateClientInfoException() : base("ClientId or Secret already exists") { }
+        public DuplicateClientInfoException(string message) : base(message) { }
+
     }
 }
