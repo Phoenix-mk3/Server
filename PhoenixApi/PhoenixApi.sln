@@ -5,9 +5,13 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixApi", "PhoenixApi\PhoenixApi.csproj", "{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixApi.AppHost", "PhoenixApi.AppHost\PhoenixApi.AppHost.csproj", "{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixApi.AppHost", "PhoenixApi.AppHost\PhoenixApi.AppHost.csproj", "{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixApi.ServiceDefaults", "PhoenixApi.ServiceDefaults\PhoenixApi.ServiceDefaults.csproj", "{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationTests", "AuthenticationTests\AuthenticationTests.csproj", "{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{523E329E-FD23-4165-9ECD-22DEC5912E5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F068C9A-FEDC-4B30-AD98-5C20A76AD305} = {523E329E-FD23-4165-9ECD-22DEC5912E5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD4767DB-8FBF-44B4-81BE-6022D53FFE12}

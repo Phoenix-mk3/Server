@@ -54,6 +54,10 @@
             "Aspire.Hosting.AppHost": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "Aspire.Hosting.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.2.1, )"
             }
           },
           "imports": [
