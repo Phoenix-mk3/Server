@@ -1,53 +1,37 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using PhoenixApi.Controllers;
 using PhoenixApi.Data;
 using PhoenixApi.Models;
+using PhoenixApi.Repositories.Base;
+using PhoenixApi.UnitofWork;
 
 namespace PhoenixApi.Repositories
 {
-    public interface IHubRepository
+    public interface IHubRepository: IRepository<Hub, Guid>
     {
-        Task<Hub> GetHubWithClientIdAsync(HubLoginDto loginDto);
-        Task AddHubAsync(Hub hub);
-        void RemoveHub(Hub hub);
+        Task<Hub> GetHubByClientIdAsync(Guid clientId);
     }
-    public class HubRepository(ApiDbContext context, ILogger<HubRepository> logger) : IHubRepository
+    public class HubRepository : RepositoryBase<Hub, Guid>, IHubRepository
     {
-        public async Task<Hub> GetHubWithClientIdAsync(HubLoginDto loginDto)
+        private readonly ILogger _logger;
+        public HubRepository(ApiDbContext context, ILogger<HubRepository> logger) : base(context) 
         {
-            try
-            {
-                Hub hub = await context.Hubs.SingleOrDefaultAsync(h => h.ClientId == loginDto.ClientId && h.IsActive)!;
-                return hub!;
-            }
-            catch (Exception ex)
-            {
-                logger.LogWarning("Unable to find hub with client id {clientId}, error: {error}", loginDto.ClientId, ex);
-                return null;
-            }
-        }
-        public async Task AddHubAsync(Hub hub) 
-        {
-            try
-            {
-                await context.Hubs.AddAsync(hub);
-            }
-            catch (Exception ex) 
-            {
-                logger.LogError("Failed to add hub to database. Exception: {ex}", ex);
-            }
-        }
-        public void RemoveHub(Hub hub)
-        {
-            try
-            {
-                context.Hubs.Remove(hub);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError("Failed to remove hub from database. Exception: {ex}", ex);
-            }
+            _logger = logger;
         }
 
+        public async Task<Hub> GetHubByClientIdAsync(Guid clientId)
+        {
+            try
+            {
+                Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId.ToString() && h.IsActive) ?? throw new KeyNotFoundException($"Hub with client id {clientId} not found");
+                return hub;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Unable to find hub with client id {clientId}, error: {error}", clientId, ex);
+                throw;
+            }
+        }
     }
 }

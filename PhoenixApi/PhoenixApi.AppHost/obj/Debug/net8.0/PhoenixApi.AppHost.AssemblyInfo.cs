@@ -18,13 +18,13 @@ using System.Reflection;
     "t\\")]
 [assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.1.0\\tools\\ex" +
     "t\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Server\\PhoenixApi\\PhoenixApi.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Dashboard.Sdk.win-x64\\8.1.0\\tools\\Aspire.Das" +
     "hboard.exe")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c27d7cc8759cc894921ccf5882630ca481c125")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae3d1d5ddf857487974b044383a2ba38263899b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

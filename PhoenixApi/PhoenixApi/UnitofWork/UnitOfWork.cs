@@ -11,7 +11,6 @@ namespace PhoenixApi.UnitofWork
         {
             _context = context;
         }
-        public DbContext Context => _context;
 
         public void Dispose()
         {
@@ -23,11 +22,11 @@ namespace PhoenixApi.UnitofWork
         {
             await _context.SaveChangesAsync();
         }
-        protected virtual void Dispose(bool disposing) 
+        protected virtual void Dispose(bool dispose) 
         {
             if (!_disposed)
             {
-                if (disposing)
+                if (dispose)
                 {
                     _context.Dispose();
                 }
