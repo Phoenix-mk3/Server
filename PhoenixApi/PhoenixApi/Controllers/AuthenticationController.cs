@@ -19,14 +19,15 @@ namespace PhoenixApi.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authService;
+        private readonly IHubService _hubService;
         private readonly IConfiguration _configuration;
-        private readonly ApiDbContext _context;
+        private readonly ILogger<AuthenticationController> _logger;
 
-        public AuthenticationController(IAuthenticationService authService, IConfiguration configuration, ApiDbContext context)
+        public AuthenticationController(IAuthenticationService authService, IConfiguration configuration, ILogger<AuthenticationController> logger)
         {
             _authService = authService;
             _configuration = configuration;
-            _context = context;
+            _logger = logger;
         }
 
         [HttpPost("login")]
@@ -53,17 +54,28 @@ namespace PhoenixApi.Controllers
         [HttpGet("get-hub-credentials/{hubId}")]
         public async Task<IActionResult> GetHubCredentials(Guid hubId)
         {
-            var hub = await _context.Hubs.SingleOrDefaultAsync(h => h.HubId == hubId && h.IsActive);
-
-            if (hub == null)
+            HubLoginDto login;
+            try
             {
+                login = _authService.GenerateHubCredentials();
+                await _authService.UpdateHubWithCredentials(hubId, login);
+
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogWarning(ex, "Could not find hub with id {hubId}", hubId);
                 return NotFound("Hub not found or inactive.");
+            }
+            catch (DuplicateClientInfoException ex) 
+            {
+                _logger.LogWarning(ex, "Attempted to set ClientId or ClientSecret more than once for hub {HubId}", hubId);
+                return Conflict("ClientId or Secret already exists for this hub.");
             }
 
             return Ok(new
             {
-                ClientId = hub.ClientId,
-                ClientSecret = hub.ClientSecret
+                login.ClientId,
+                login.ClientSecret
             });
         }
     }

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +23,24 @@
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\newhubrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\newhubrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,28 +51,8 @@
       "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\data\\apidatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\data\\apidatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\sensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,98 +122,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HubController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HubService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T03:18:03.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NewHubRepo.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\NewHubRepo.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\NewHubRepo.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\NewHubRepo.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\NewHubRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T02:31:03.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HubRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T20:59:51.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T20:59:49.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:34:28.194Z",
+              "WhenOpened": "2024-10-27T06:01:08.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "HubController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:34:26.365Z",
+              "WhenOpened": "2024-10-27T04:16:25.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "RelativeToolTip": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:33:01.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\UnitofWork\\IUnitOfWork.cs",
@@ -244,27 +167,27 @@
               "RelativeDocumentMoniker": "PhoenixApi\\Data\\ApiDbContext.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
               "RelativeToolTip": "PhoenixApi\\Data\\ApiDbContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwDQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wCsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:55:49.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
               "RelativeToolTip": "PhoenixApi\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:55:35.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ApiDataContext.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDataContext.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Data\\ApiDataContext.cs",
@@ -272,50 +195,38 @@
               "RelativeToolTip": "PhoenixApi\\Data\\ApiDataContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wCIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:49:48.831Z"
+              "WhenOpened": "2024-10-15T10:49:48.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Hub.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
               "RelativeToolTip": "PhoenixApi\\Models\\Hub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:58:16.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HubService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T03:14:44.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:58:33.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Program.cs",
@@ -328,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PhoenixApi\\appsettings.Development.json",
@@ -336,11 +247,12 @@
               "RelativeToolTip": "PhoenixApi\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T10:15:13.459Z"
+              "WhenOpened": "2024-10-15T10:15:13.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.json",
               "RelativeDocumentMoniker": "PhoenixApi\\appsettings.json",
@@ -353,7 +265,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwFMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T11:34:26.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HubRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T02:31:03.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "RelativeToolTip": "PhoenixApi\\UnitofWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T11:33:01.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\WeatherForecast.cs",
@@ -366,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "AuthenticationTests.csproj",
               "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationTests.csproj",
               "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationTests.csproj",
@@ -374,11 +325,12 @@
               "RelativeToolTip": "AuthenticationTests\\AuthenticationTests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-15T10:02:56.432Z"
+              "WhenOpened": "2024-10-15T10:02:56.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "SensorData.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\SensorData.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\SensorData.cs",
@@ -386,11 +338,12 @@
               "RelativeToolTip": "PhoenixApi\\Models\\SensorData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:30:48.2Z"
+              "WhenOpened": "2024-10-15T13:30:48.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "Device.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Device.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Device.cs",
@@ -398,11 +351,12 @@
               "RelativeToolTip": "PhoenixApi\\Models\\Device.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:58:00.718Z"
+              "WhenOpened": "2024-10-15T11:58:00.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\WeatherForecastController.cs",
@@ -410,11 +364,12 @@
               "RelativeToolTip": "PhoenixApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAApwBcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T10:26:49.52Z"
+              "WhenOpened": "2024-09-27T10:26:49.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Properties\\launchSettings.json",
@@ -422,11 +377,12 @@
               "RelativeToolTip": "PhoenixApi.AppHost\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T11:14:02.762Z"
+              "WhenOpened": "2024-10-15T11:14:02.762Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.json",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.json",
@@ -434,11 +390,12 @@
               "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T11:14:04.66Z"
+              "WhenOpened": "2024-10-15T11:14:04.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.Development.json",
@@ -446,11 +403,12 @@
               "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T11:14:07.513Z"
+              "WhenOpened": "2024-10-15T11:14:07.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 22,
               "Title": "Extensions.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\Extensions.cs",
               "RelativeDocumentMoniker": "PhoenixApi.ServiceDefaults\\Extensions.cs",
@@ -458,7 +416,8 @@
               "RelativeToolTip": "PhoenixApi.ServiceDefaults\\Extensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:55:32.262Z"
+              "WhenOpened": "2024-10-15T09:55:32.262Z",
+              "EditorCaption": ""
             }
           ]
         }

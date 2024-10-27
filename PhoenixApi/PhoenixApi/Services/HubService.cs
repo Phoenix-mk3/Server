@@ -12,12 +12,12 @@ namespace PhoenixApi.Services
         Task CreateHubAsync(string name = null);
         Task<IEnumerable<Hub>> GetAllHubsAsync();
     }
-    public class HubService(IHubRepository hubRepo, IUnitOfWork unitOfWork) : IHubService
+    public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork) : IHubService
     {
         public async Task<IEnumerable<Hub>> GetAllHubsAsync()
         {
 
-            IEnumerable<Hub> hubs = await hubRepo.GetAllAsync();
+            IEnumerable<Hub> hubs = await hubRepository.GetAllAsync();
             return hubs;
         }
 
@@ -26,19 +26,17 @@ namespace PhoenixApi.Services
             Hub hub = new()
             {
                 HubId = Guid.NewGuid(),
-                Name = name,
-                ClientId = Guid.NewGuid().ToString(),
-                ClientSecret = HashSecret(Guid.NewGuid().ToString())
+                Name = name
             };
 
-            await hubRepo.AddAsync(hub);
+            await hubRepository.AddAsync(hub);
             await unitOfWork.SaveChangesAsync();
         }
-        private static string HashSecret(string secret)
+
+        public async Task UpdateHub(Guid hubId, Hub hub)
         {
-            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(secret));
-            var hashedSecret = Convert.ToBase64String(hashedBytes);
-            return hashedSecret;
+            await hubRepository.UpdateAsync(hubId, hub);
+            await unitOfWork.SaveChangesAsync();
         }
     }
 }

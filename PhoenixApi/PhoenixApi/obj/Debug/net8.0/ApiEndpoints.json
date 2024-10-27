@@ -34,7 +34,7 @@
   {
     "ContainingType": "PhoenixApi.Controllers.HubController",
     "Method": "Create",
-    "RelativePath": "api/Hub/Add",
+    "RelativePath": "api/Hub/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

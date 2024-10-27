@@ -24,7 +24,7 @@ namespace PhoenixApi.Repositories
         {
             try
             {
-                Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId.ToString() && h.IsActive) ?? throw new KeyNotFoundException($"Hub with client id {clientId} not found");
+                Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId && h.IsActive) ?? throw new KeyNotFoundException($"Hub with client id {clientId} not found");
                 return hub;
             }
             catch (Exception ex)
