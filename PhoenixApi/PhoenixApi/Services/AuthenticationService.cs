@@ -11,12 +11,14 @@ namespace PhoenixApi.Services
 {
     public interface IAuthenticationService
     {
-        string GenerateJwtToken(Guid hubId);
+        Task<string> GenerateJwtToken(Guid hubId);
         Task<bool> ClientSecretIsValid(HubLoginDto hubLoginDto);
+        Task<Hub> GetHubByClientId(Guid clientId);
+        
     }
     public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger): IAuthenticationService
     {
-        public string GenerateJwtToken(Guid hubId)
+        public async Task<string> GenerateJwtToken(Guid hubId)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var signingKey = config["JwtSecretKey"] ?? null;
@@ -40,11 +42,17 @@ namespace PhoenixApi.Services
         }
         public async Task<bool> ClientSecretIsValid(HubLoginDto loginDto)
         {
-            Hub hub = await hubRepository.GetHubWithClientIdAsync(loginDto);
+            Hub hub = await hubRepository.GetHubByClientIdAsync(loginDto.ClientId);
 
             var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(loginDto.ClientSecret));
             var hashedSecret = Convert.ToBase64String(hashedBytes);
             return hashedSecret == hub.ClientSecret;
+        }
+
+        public async Task<Hub> GetHubByClientId(Guid clientId)
+        {
+            Hub hub = await hubRepository.GetHubByClientIdAsync(clientId);
+            return hub;
         }
     }
 }

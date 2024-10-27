@@ -19,7 +19,6 @@ namespace PhoenixApi.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authService;
-        private readonly IHubRepository _authRepository;
         private readonly IConfiguration _configuration;
         private readonly ApiDbContext _context;
 
@@ -33,7 +32,7 @@ namespace PhoenixApi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> AuthenticateHub([FromBody] HubLoginDto loginDto)
         {
-            var hub = await _authRepository.GetHubWithClientIdAsync(loginDto);
+            var hub = await _authService.GetHubByClientId(loginDto.ClientId);
 
             if (hub == null || !await _authService.ClientSecretIsValid(loginDto))
             {
@@ -42,7 +41,7 @@ namespace PhoenixApi.Controllers
 
             try
             {
-                var token = _authService.GenerateJwtToken(hub.HubId);
+                var token = await _authService.GenerateJwtToken(hub.HubId);
                 return Ok(new { AccessToken = token });
             }
             catch
@@ -70,8 +69,8 @@ namespace PhoenixApi.Controllers
     }
     public class HubLoginDto
     {
-        public string ClientId { get; set; }
-        public string ClientSecret { get; set; }
+        public required Guid ClientId { get; set; }
+        public required string ClientSecret { get; set; }
     }
 
     
