@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PhoenixApi.AppHost
-build_property.ProjectDir = C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi.AppHost\
+build_property.ProjectDir = C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi.AppHost\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
