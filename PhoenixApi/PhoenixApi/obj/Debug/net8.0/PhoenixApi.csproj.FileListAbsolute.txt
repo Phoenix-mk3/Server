@@ -65,7 +65,6 @@ C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\obj\Debug\
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\obj\Debug\net8.0\PhoenixApi.pdb
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\obj\Debug\net8.0\PhoenixApi.genruntimeconfig.cache
 C:\Users\chris\Downloads\Code\PhoenixMk3\Server\PhoenixApi\PhoenixApi\obj\Debug\net8.0\ref\PhoenixApi.dll
-C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\appsettings.json
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\PhoenixApi.exe
 C:\Users\chris\Source\Repos\Server\PhoenixApi\PhoenixApi\bin\Debug\net8.0\PhoenixApi.deps.json
