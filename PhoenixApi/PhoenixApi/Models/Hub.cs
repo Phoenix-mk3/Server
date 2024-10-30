@@ -8,7 +8,7 @@
         public string? ClientSecret { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsActive { get; set; } = true;
-        public ICollection<Device> Devices { get; set; } = new List<Device>();
+        public ICollection<Device> Devices { get; set; } = [];
 
     }
 }

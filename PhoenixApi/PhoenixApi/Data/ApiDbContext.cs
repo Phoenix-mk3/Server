@@ -11,6 +11,11 @@ namespace PhoenixApi.Data
 
         public DbSet<Hub> Hubs { get; set; }
         public DbSet<Device> Devices { get; set; }
+        public DbSet<DeviceTypeEnum> DeviceTypeEnums { get; set; }
+        public DbSet<DeviceData> DeviceDatas {  get; set; }
+        public DbSet<DataTypeEnum> DataTypeEnums { get; set; }
+        public DbSet<UnitEnum> UnitEnums { get; set; }
+        public DbSet<DataCategoryEnum> DataCategoryEnums { get; set; }
     }
     public static class Extensions
     {

@@ -15,7 +15,7 @@ namespace PhoenixApi.Repositories
     }
     public class HubRepository : RepositoryBase<Hub, Guid>, IHubRepository
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<HubRepository> _logger;
         public HubRepository(ApiDbContext context, ILogger<HubRepository> logger) : base(context) 
         {
             _logger = logger;

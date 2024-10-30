@@ -5,12 +5,15 @@
         public Guid DeviceId { get; set; }
         public string? Name { get; set; }
         public Guid HubId { get; set; }
-        public Hub Hub { get; set; } = null!;
-        public Type Type { get; set; }
+        public required Hub Hub { get; set; }
+        public int TypeId { get; set; }
+        public required DeviceTypeEnum Type { get; set; }
+        public ICollection<DeviceData> Data { get; set; } = [];
 
     }
-    public enum Type
+    public class DeviceTypeEnum
     {
-        Unknown = 0
+        public int Id { get; set; }
+        public required string Name { get; set; }
     }
 }
