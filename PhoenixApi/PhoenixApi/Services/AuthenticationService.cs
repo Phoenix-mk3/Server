@@ -2,6 +2,8 @@
 using Microsoft.IdentityModel.Tokens;
 using PhoenixApi.Controllers;
 using PhoenixApi.Models;
+using PhoenixApi.Models.Responses;
+using PhoenixApi.Models.Security;
 using PhoenixApi.Repositories;
 using PhoenixApi.UnitofWork;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,17 +16,53 @@ namespace PhoenixApi.Services
 {
     public interface IAuthenticationService
     {
-        Task<string> GenerateJwtTokenWithHubId(Guid hubId);
-        Task<bool> ClientSecretIsValid(HubLoginDto hubLoginDto);
+        Task<string> GenerateHubToken(Guid hubId);
+        Task<bool> ClientSecretIsValid(LoginDto hubLoginDto);
         Task<Hub> GetHubByClientId(Guid clientId);
-        HubLoginDto GenerateHubCredentials();
-        Task UpdateHubWithCredentials(Guid hubId, HubLoginDto loginDto);
+        LoginDto GenerateLoginCredentials();
+        Task UpdateHubWithCredentials(Guid hubId, LoginDto loginDto);
+        Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims);
+        Task UpdateUserWithCredentials(ClaimsPrincipal claims, LoginDto loginDto);
+        Task CheckUserInHub(ClaimsPrincipal claims, Guid hubId);
     }
-    public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger, IUnitOfWork unitOfWork): IAuthenticationService
+    public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger, IUnitOfWork unitOfWork, ICliamsRetrievalService claimsRetrievalService, IUserRepository userRepository): IAuthenticationService
     {
-        public async Task<string> GenerateJwtTokenWithHubId(Guid hubId)
+        public async Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims)
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
+            Guid hubId = claimsRetrievalService.GetSubjectFromClaims(claims);
+            Hub hub = await GetHubByHubId(hubId);
+
+            User user = new User();
+            user.Id = Guid.NewGuid();
+            user.Hubs.Add(hub);
+
+            var clientId = Guid.NewGuid();
+            user.ClientId = clientId;
+
+            var clientSecret = Guid.NewGuid();
+            user.ClientSecret = HashSecret(clientSecret.ToString());
+
+            await userRepository.AddAsync(user);
+            await unitOfWork.SaveChangesAsync();
+
+            var token = await GenerateJwtToken(user.Id.ToString(), AuthRole.TempUser, 10);
+
+            UserAuthResponse userAuthResponse = new UserAuthResponse()
+            {
+                UserId = user.Id,
+                TemporaryAuthToken = token
+            };
+
+            return userAuthResponse;
+        }
+        public async Task<string> GenerateHubToken(Guid hubId)
+        {
+            var token = await GenerateJwtToken(hubId.ToString(), AuthRole.Hub);
+
+            return token;
+        }
+        private string GetSigningKeyFromConfig()
+        {
             var signingKey = config["Jwt:SecretKey"] ?? null;
             if (signingKey == null)
             {
@@ -32,20 +70,27 @@ namespace PhoenixApi.Services
                 throw new ArgumentNullException(nameof(signingKey));
             }
             logger.LogInformation("Retrieved Signing key");
+            return signingKey;
+        }
+        private async Task<string> GenerateJwtToken(string subject, AuthRole authRole, int expirationTime = 12*60)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var signingKey = GetSigningKeyFromConfig();
 
-            var jti = Guid.NewGuid();
+            var tokenIdentifier = Guid.NewGuid();
+            var issuedAt = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
 
             var claims = new List<Claim>
             {
-                new(JwtRegisteredClaimNames.Sub, hubId.ToString()),
-                new(JwtRegisteredClaimNames.Jti, jti.ToString()),
-                new(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
-                new(ClaimTypes.Role, "Hub")
+                new(JwtRegisteredClaimNames.Sub, subject),
+                new(JwtRegisteredClaimNames.Jti, tokenIdentifier.ToString()),
+                new(JwtRegisteredClaimNames.Iat, issuedAt, ClaimValueTypes.Integer64),
+                new(ClaimTypes.Role, authRole.ToString())
             };
 
 
             //TESTING PURPOSES ONLY, REMOVE LATER)
-            if (hubId.ToString() == "cbb69446-b121-4549-a4eb-b8d7384072c2")
+            if (subject == "cbb69446-b121-4549-a4eb-b8d7384072c2")
             {
                 claims.Add(new Claim("Permission", "IsAdmin"));
             }
@@ -53,7 +98,7 @@ namespace PhoenixApi.Services
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var expiration = DateTime.UtcNow.AddHours(12);
+            var expiration = DateTime.UtcNow.AddMinutes(expirationTime);
 
             var token = new JwtSecurityToken(
                 issuer: config["Jwt:Issuer"],
@@ -64,12 +109,12 @@ namespace PhoenixApi.Services
                 signingCredentials: creds
                 );
 
-            logger.LogInformation("New key generated with id '{jti}', for hub '{hubId}'. Expires at: {expr}", jti, hubId, expiration);
+            logger.LogInformation("New key generated with id '{jti}', for {authRole} '{hubId}'. Expires at: {expr}", tokenIdentifier, authRole, subject, expiration);
 
 
             return tokenHandler.WriteToken(token);
         }
-        public async Task<bool> ClientSecretIsValid(HubLoginDto loginDto)
+        public async Task<bool> ClientSecretIsValid(LoginDto loginDto)
         {
             Hub hub = await hubRepository.GetHubByClientIdAsync(loginDto.ClientId);
 
@@ -95,12 +140,12 @@ namespace PhoenixApi.Services
             return hub;
         }
 
-        public HubLoginDto GenerateHubCredentials()
+        public LoginDto GenerateLoginCredentials()
         {
             var newClientId = Guid.NewGuid();
             var newClientSecret = Guid.NewGuid().ToString();
 
-            HubLoginDto loginDto = new()
+            LoginDto loginDto = new()
             {
                 ClientId = newClientId,
                 ClientSecret = newClientSecret
@@ -108,7 +153,7 @@ namespace PhoenixApi.Services
 
             return loginDto;
         }
-        public async Task UpdateHubWithCredentials(Guid hubId, HubLoginDto loginDto)
+        public async Task UpdateHubWithCredentials(Guid hubId, LoginDto loginDto)
         {
             Hub hub = await GetHubByHubId(hubId);
             if (hub.ClientId != null || hub.ClientSecret != null)
@@ -121,9 +166,40 @@ namespace PhoenixApi.Services
 
             await hubRepository.UpdateAsync(hubId, hub);
             await unitOfWork.SaveChangesAsync();
-
         }
 
+        public async Task UpdateUserWithCredentials(ClaimsPrincipal claims, LoginDto loginDto)
+        {
+            var userId = claimsRetrievalService.GetSubjectFromClaims(claims);
+
+            User user = await userRepository.GetByIdAsync(userId);
+            if (user.ClientId != null || user.ClientSecret != null)
+            {
+                throw new DuplicateClientInfoException($"ClientId or Secret already exists for user {userId}");
+            }
+
+            user.ClientId = loginDto.ClientId;
+            user.ClientSecret = HashSecret(loginDto.ClientSecret!);
+
+            await userRepository.UpdateAsync(userId, user);
+            await unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task CheckUserInHub(ClaimsPrincipal claims,  Guid hubId)
+        {
+            var userId = claimsRetrievalService.GetSubjectFromClaims(claims);
+
+            var hub = await hubRepository.GetByIdAsync(hubId);
+            var user = await userRepository.GetByIdAsync(userId);
+
+            if (user == null) throw new InvalidOperationException("User not found.");
+            if (hub == null) throw new InvalidOperationException("Hub not found.");
+
+            if (!user.Hubs.Any(h => h.HubId == hub.HubId))
+            {
+                throw new UnauthorizedAccessException("User is not associated with the specified hub.");
+            }
+        }
 
         private string HashSecret(string secret)
         {

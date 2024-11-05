@@ -16,6 +16,7 @@ namespace PhoenixApi.Data
         public DbSet<DataTypeEnum> DataTypeEnums { get; set; }
         public DbSet<UnitEnum> UnitEnums { get; set; }
         public DbSet<DataCategoryEnum> DataCategoryEnums { get; set; }
+        public DbSet<User> Users { get; set; }
     }
     public static class Extensions
     {

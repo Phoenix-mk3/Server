@@ -23,7 +23,7 @@ namespace AuthenticationTests.Service
         [Fact]
         public async Task ClientSecretIsValid_ValidSecret_ReturnsTrue()
         {
-            HubLoginDto loginDto = new HubLoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
+            LoginDto loginDto = new LoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
 
             Hub hub = new Hub { ClientSecret = ClientSecretIsValidHashCheck(loginDto.ClientSecret)};
 

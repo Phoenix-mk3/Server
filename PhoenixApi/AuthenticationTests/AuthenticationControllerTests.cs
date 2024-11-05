@@ -25,7 +25,7 @@ namespace AuthenticationTests
         public async Task AuthenticateHub_ValidLogin_ReturnsAccessToken()
         {
             //Arrange
-            var loginDto = new HubLoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
+            var loginDto = new LoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
             var hub = new Hub { HubId = Guid.NewGuid(), ClientId = loginDto.ClientId, ClientSecret = "validSecret" };
             var token = "generatedToken";
 
@@ -33,7 +33,7 @@ namespace AuthenticationTests
                 .ReturnsAsync(hub);
             _mockAuthService.Setup(service => service.ClientSecretIsValid(loginDto))
                 .ReturnsAsync(true);
-            _mockAuthService.Setup(service => service.GenerateJwtTokenWithHubId(hub.HubId))
+            _mockAuthService.Setup(service => service.GenerateHubToken(hub.HubId))
                 .ReturnsAsync(token);
 
 
@@ -49,7 +49,7 @@ namespace AuthenticationTests
         public async Task AuthenticateHub_InvalidClientId_ReturnsUnauthorized()
         {
             //Arrange
-            var loginDto = new HubLoginDto { ClientId = Guid.NewGuid(), ClientSecret = "somSecret" };
+            var loginDto = new LoginDto { ClientId = Guid.NewGuid(), ClientSecret = "somSecret" };
 
             _mockAuthService.Setup(serivce => serivce.GetHubByClientId(loginDto.ClientId))
                 .ReturnsAsync((Hub)null);
@@ -66,7 +66,7 @@ namespace AuthenticationTests
         public async Task AuthenticateHub_InvalidClientSecret_ReturnsUnauthorized()
         {
             //Arrange
-            var loginDto = new HubLoginDto { ClientId = Guid.NewGuid(), ClientSecret = "invalidSecret" };
+            var loginDto = new LoginDto { ClientId = Guid.NewGuid(), ClientSecret = "invalidSecret" };
             var hub = new Hub { HubId = Guid.NewGuid(), ClientId = loginDto.ClientId, ClientSecret = "wrongSecret" };
 
             _mockAuthService.Setup(service => service.GetHubByClientId(loginDto.ClientId)).ReturnsAsync(hub);
@@ -82,14 +82,14 @@ namespace AuthenticationTests
         [Fact]
         public async Task AuthenticateHub_ExceptionDuringTokenGeneration_ReturnsInternalServerError()
         {
-            var loginDto = new HubLoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
+            var loginDto = new LoginDto { ClientId = Guid.NewGuid(), ClientSecret = "validSecret" };
             var hub = new Hub { HubId = Guid.NewGuid(), ClientId = loginDto.ClientId, ClientSecret = "validSecret" };
 
             _mockAuthService.Setup(service => service.GetHubByClientId(loginDto.ClientId))
                  .ReturnsAsync(hub);
             _mockAuthService.Setup(service => service.ClientSecretIsValid(loginDto))
                 .ReturnsAsync(true);
-            _mockAuthService.Setup(service => service.GenerateJwtTokenWithHubId(hub.HubId))
+            _mockAuthService.Setup(service => service.GenerateHubToken(hub.HubId))
                 .ThrowsAsync(new Exception("Some error occurred"));
 
             var result = await _authController.AuthenticateHub(loginDto);
@@ -112,19 +112,19 @@ namespace AuthenticationTests
         public async Task GetHubCredentials_ValidHubId_ReturnsClientCredentials()
         {
             var hubId = Guid.NewGuid();
-            var expectedLoginDto = new HubLoginDto
+            var expectedLoginDto = new LoginDto
             {
                 ClientId = Guid.NewGuid(),
                 ClientSecret = "testSecret"
             };
 
-            _mockAuthService.Setup(s => s.GenerateHubCredentials()).Returns(expectedLoginDto);
+            _mockAuthService.Setup(s => s.GenerateLoginCredentials()).Returns(expectedLoginDto);
             _mockAuthService.Setup(s => s.UpdateHubWithCredentials(hubId, expectedLoginDto)).Returns(Task.CompletedTask);
 
             var result = await _authController.GetHubCredentials(hubId);
 
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var loginDto = Assert.IsType<HubLoginDto>(okResult.Value);
+            var loginDto = Assert.IsType<LoginDto>(okResult.Value);
             Assert.Equal(expectedLoginDto.ClientId, loginDto.ClientId);
             Assert.Equal(expectedLoginDto.ClientSecret, loginDto.ClientSecret);
         }
@@ -132,7 +132,7 @@ namespace AuthenticationTests
         public async Task GetHubCredentials_HubNotFound_ReturnsNotFound()
         {
             var hubId = Guid.NewGuid();
-            _mockAuthService.Setup(s => s.GenerateHubCredentials()).Throws(new KeyNotFoundException());
+            _mockAuthService.Setup(s => s.GenerateLoginCredentials()).Throws(new KeyNotFoundException());
 
             var result = await _authController.GetHubCredentials(hubId);
 
@@ -143,7 +143,7 @@ namespace AuthenticationTests
         public async Task GetHubCredentials_DuplicateClientInfo_ReturnsConflict()
         {
             var hubId = Guid.NewGuid();
-            _mockAuthService.Setup(s => s.GenerateHubCredentials()).Throws(new DuplicateClientInfoException());
+            _mockAuthService.Setup(s => s.GenerateLoginCredentials()).Throws(new DuplicateClientInfoException());
 
             var result = await _authController.GetHubCredentials(hubId);
 
@@ -154,7 +154,7 @@ namespace AuthenticationTests
         public async Task GetHubCredentials_UnhandledException_ReturnsInternalServerError()
         {
             var hubId = Guid.NewGuid();
-            _mockAuthService.Setup(s => s.GenerateHubCredentials()).Throws(new Exception("Unexpected Error."));
+            _mockAuthService.Setup(s => s.GenerateLoginCredentials()).Throws(new Exception("Unexpected Error."));
 
             var result = await _authController.GetHubCredentials(hubId);
 

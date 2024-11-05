@@ -31,23 +31,13 @@ namespace PhoenixApi.Repositories.Base
 
         public async Task UpdateAsync(TKey id, T entity)
         {
-            var existingEntity = await _dbSet.FindAsync(id);
-            if (existingEntity == null)
-            {
-                throw new KeyNotFoundException("Entity not found");
-            }
-
+            var existingEntity = await _dbSet.FindAsync(id) ?? throw new KeyNotFoundException("Entity not found");
             _context.Entry(existingEntity).CurrentValues.SetValues(entity);
         }
 
         public async Task DeleteAsync(TKey id)
         {
-            var entity = await _dbSet.FindAsync(id);
-            if (entity == null)
-            {
-                throw new KeyNotFoundException("Entity not found");
-            }
-
+            var entity = await _dbSet.FindAsync(id) ?? throw new KeyNotFoundException("Entity not found");
             _dbSet.Remove(entity);
         }
     }

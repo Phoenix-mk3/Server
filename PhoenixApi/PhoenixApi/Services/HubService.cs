@@ -15,7 +15,7 @@ namespace PhoenixApi.Services
         Task<IEnumerable<Hub>> GetAllHubsAsync();
         Task UpdateHubName(string name, ClaimsPrincipal claims);
     }
-    public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork) : IHubService
+    public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork, ICliamsRetrievalService cliamsRetrievalService) : IHubService
     {
         public async Task<IEnumerable<Hub>> GetAllHubsAsync()
         {
@@ -44,27 +44,10 @@ namespace PhoenixApi.Services
 
         public async Task UpdateHubName(string name, ClaimsPrincipal claims)
         {
-            Guid hubId = GetHubIdFromClaims(claims);
+            Guid hubId = cliamsRetrievalService.GetSubjectFromClaims(claims);
 
             await hubRepository.UpdateNameAsync(hubId, name);
             await unitOfWork.SaveChangesAsync();
-        }
-
-        private Guid GetHubIdFromClaims(ClaimsPrincipal claims)
-        {
-            if (claims == null)
-            {
-                throw new ArgumentNullException(nameof(claims));
-            }
-
-            var hubIdClaim = claims.FindFirst(ClaimTypes.NameIdentifier) ?? claims.FindFirst(JwtRegisteredClaimNames.Sub);
-
-            if (hubIdClaim != null && Guid.TryParse(hubIdClaim.Value, out Guid hubId))
-            {
-                return hubId;
-            }
-            throw new ArgumentNullException(nameof(hubId));
-
         }
     }
 }

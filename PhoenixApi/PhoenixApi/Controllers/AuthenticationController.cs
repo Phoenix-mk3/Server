@@ -12,6 +12,9 @@ using System.Text;
 using PhoenixApi.Repositories;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using PhoenixApi.Models.Security;
 
 namespace PhoenixApi.Controllers
 {
@@ -28,8 +31,39 @@ namespace PhoenixApi.Controllers
             _logger = logger;
         }
 
+        [HttpGet("hub-user-auth")]
+        [Authorize(Roles = nameof(AuthRole.Hub))]
+        public async Task<IActionResult> UserAuthThroughHub()
+        {
+            try
+            {
+                var response = await _authService.BuildUserAuthResponse(User);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Something went wrong during hub-user-auth");
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
+        }
+
+        
+
         [HttpPost("login")]
-        public async Task<IActionResult> AuthenticateHub([FromBody] HubLoginDto loginDto)
+        public async Task<IActionResult> AuthenticateClient([FromBody] LoginDto loginDto)
+        {
+            if (loginDto == null)
+            {
+                return BadRequest("Request body cannot be null");
+            }
+
+            return StatusCode(StatusCodes.Status501NotImplemented)  ;
+        }
+
+
+        [HttpPost("login-hub")]
+        public async Task<IActionResult> AuthenticateHub([FromBody] LoginDto loginDto)
         {
             if (loginDto == null)
             {
@@ -45,7 +79,7 @@ namespace PhoenixApi.Controllers
 
             try
             {
-                var token = await _authService.GenerateJwtTokenWithHubId(hub.HubId);
+                var token = await _authService.GenerateHubToken(hub.HubId);
                 var expiration = DateTime.UtcNow.AddHours(12);
 
                 var response = new AuthResponse
@@ -56,19 +90,69 @@ namespace PhoenixApi.Controllers
 
                 return Ok(response);
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError("An error occurred {ex}", ex);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
+        }
+
+        [HttpGet("user-credentials")]
+        [Authorize(Roles = nameof(AuthRole.TempUser))]
+        public async Task<IActionResult> GetUserCredentials([FromQuery] Guid hubId)
+        {
+            try
+            {
+                await _authService.CheckUserInHub(User, hubId);
+            }
+            catch (InvalidOperationException ex)
+            {
+                _logger.LogWarning(ex, "Could not find user {user} in hub {hubId}", User, hubId);
+                return NotFound(new { ex.Message });
+            }
+            catch(UnauthorizedAccessException ex)
+            {
+                _logger.LogError(ex, "Could not find user or hub association in databse");
+                return StatusCode(StatusCodes.Status403Forbidden, new { ex.Message });
+            }
+            catch (Exception ex) // Handle unexpected exceptions
+            {
+                _logger.LogError("An internal error occurred during 'Get User Credentials'. {ex}", ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred.");
+            }
+
+            LoginDto login;
+            try
+            {
+                login = _authService.GenerateLoginCredentials();
+                await _authService.UpdateUserWithCredentials(User, login);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogWarning(ex, "Could not find user in hub with hubId {hubId}", hubId);
+                return NotFound("Hub not found or inactive.");
+            }
+            catch (DuplicateClientInfoException ex)
+            {
+                _logger.LogWarning(ex, "Attempted to set ClientId or ClientSecret more than once for user {user}", User);
+                return Conflict("ClientId or Secret already exists for this user.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("An internal error during 'Get User Credentials'. {ex} ", ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred.");
+            }
+            login.ClientSecret.Append(char.Parse(AuthRole.User.ToString()));
+            return Ok(login);
         }
 
         [HttpGet("hub-credentials")]
         public async Task<IActionResult> GetHubCredentials([FromQuery] Guid hubId)
         {
-            HubLoginDto login;
+            LoginDto login;
             try
             {
-                login = _authService.GenerateHubCredentials();
+                login = _authService.GenerateLoginCredentials();
                 await _authService.UpdateHubWithCredentials(hubId, login);
 
             }
@@ -90,16 +174,21 @@ namespace PhoenixApi.Controllers
             return Ok(login);
         }
     }
-    public class HubLoginDto
+    public class LoginDto
     {
         public required Guid ClientId { get; set; }
         public required string ClientSecret { get; set; }
     }
+    //public class UserLoginDto
+    //{
+    //    public required string TempA
+    //}
     public class AuthResponse
     {
         public string AccessToken { get; set; }
         public DateTime Expiration { get; set; }
     }
+    
 
 
 }

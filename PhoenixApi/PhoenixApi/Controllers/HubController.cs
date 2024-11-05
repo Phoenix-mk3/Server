@@ -11,7 +11,7 @@ namespace PhoenixApi.Controllers
     public class HubController(IHubService hubService) : ControllerBase
     {
         [HttpGet("all")]
-        [Authorize(Policy = "HubOnly")]
+        [Authorize(Roles = "hub")]
         public async Task<IActionResult> GetAll()
         {
             var hubs = await hubService.GetAllHubsAsync();
@@ -27,11 +27,21 @@ namespace PhoenixApi.Controllers
         }
 
         [HttpPut("update-name")]
-        [Authorize(Roles = "Hub, User")]
+        [Authorize(Roles = "hub, User")]
         public async Task<IActionResult> UpdateName([FromBody] string name)
         {
             await hubService.UpdateHubName(name, User);
             return Ok();
         }
+
+
+        //Below line not implemented yet
+        [HttpDelete("factory-reset")]
+        [Authorize(Roles = "hub, User")]
+        public async Task<IActionResult> FactoryReset()
+        {
+            return StatusCode(StatusCodes.Status501NotImplemented);
+        }
+
     }
 }

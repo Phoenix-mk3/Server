@@ -13,14 +13,8 @@ namespace PhoenixApi.Repositories
         Task<Hub> GetHubByClientIdAsync(Guid clientId);
         Task UpdateNameAsync(Guid hubId, string name);
     }
-    public class HubRepository : RepositoryBase<Hub, Guid>, IHubRepository
+    public class HubRepository(ApiDbContext context) : RepositoryBase<Hub, Guid>(context), IHubRepository
     {
-        private readonly ILogger<HubRepository> _logger;
-        public HubRepository(ApiDbContext context, ILogger<HubRepository> logger) : base(context) 
-        {
-            _logger = logger;
-        }
-
         public async Task<Hub> GetHubByClientIdAsync(Guid clientId)
         {
             Hub? hub = await _dbSet.FirstOrDefaultAsync(h => h.ClientId == clientId && h.IsActive);
