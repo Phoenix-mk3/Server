@@ -48,53 +48,27 @@ namespace PhoenixApi.Controllers
 
         }
 
-        
-
         [HttpPost("login")]
-        public async Task<IActionResult> AuthenticateClient([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> AuthenticateSubject([FromBody] LoginDto loginDto, [FromQuery]bool isHub)
         {
-            if (loginDto == null)
+            if (loginDto == null || loginDto.ClientId == Guid.Empty || loginDto.ClientSecret == "")
             {
                 return BadRequest("Request body cannot be null");
-            }
-
-            return StatusCode(StatusCodes.Status501NotImplemented)  ;
-        }
-
-
-        [HttpPost("login-hub")]
-        public async Task<IActionResult> AuthenticateHub([FromBody] LoginDto loginDto)
-        {
-            if (loginDto == null)
-            {
-                return BadRequest("Request body cannot be null");
-            }
-
-            var hub = await _authService.GetHubByClientId(loginDto.ClientId);
-
-            if (hub == null || !await _authService.ClientSecretIsValid(loginDto))
-            {
-                return Unauthorized("Invalid login");
             }
 
             try
             {
-                var token = await _authService.GenerateHubToken(hub.HubId);
-                var expiration = DateTime.UtcNow.AddHours(12);
-
-                var response = new AuthResponse
-                {
-                    AccessToken = token,
-                    Expiration = expiration,
-                };
+                AuthResponse response = await _authService.AuthorizeSubject(loginDto.ClientId, loginDto.ClientSecret, isHub);
 
                 return Ok(response);
             }
             catch (Exception ex)
             {
-                _logger.LogError("An error occurred {ex}", ex);
+                _logger.LogError(ex, "Internal error has occoured while authing the clientId {clientId}", loginDto.ClientId);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
+
+            return StatusCode(StatusCodes.Status501NotImplemented);
         }
 
         [HttpGet("user-credentials")]

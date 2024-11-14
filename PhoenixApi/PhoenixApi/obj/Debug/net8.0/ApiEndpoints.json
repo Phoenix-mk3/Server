@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "PhoenixApi.Controllers.AuthenticationController",
-    "Method": "AuthenticateClient",
+    "Method": "AuthenticateSubject",
     "RelativePath": "api/Authentication/login",
     "HttpMethod": "POST",
     "IsController": true,
@@ -37,22 +37,11 @@
         "Name": "loginDto",
         "Type": "PhoenixApi.Controllers.LoginDto",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.AuthenticationController",
-    "Method": "AuthenticateHub",
-    "RelativePath": "api/Authentication/login-hub",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+      },
       {
-        "Name": "loginDto",
-        "Type": "PhoenixApi.Controllers.LoginDto",
-        "IsRequired": true
+        "Name": "isHub",
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

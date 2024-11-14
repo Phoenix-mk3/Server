@@ -15,7 +15,7 @@ namespace PhoenixApi.Services
         Task<IEnumerable<Hub>> GetAllHubsAsync();
         Task UpdateHubName(string name, ClaimsPrincipal claims);
     }
-    public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork, ICliamsRetrievalService cliamsRetrievalService) : IHubService
+    public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork, IClaimsRetrievalService cliamsRetrievalService) : IHubService
     {
         public async Task<IEnumerable<Hub>> GetAllHubsAsync()
         {

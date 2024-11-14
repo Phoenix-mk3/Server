@@ -3,11 +3,11 @@ using System.Security.Claims;
 
 namespace PhoenixApi.Services
 {
-    public interface ICliamsRetrievalService
+    public interface IClaimsRetrievalService
     {
         Guid GetSubjectFromClaims(ClaimsPrincipal claimsPrincipal);
     }
-    public class ClaimsRetrievalService(ILogger<ClaimsRetrievalService> logger) : ICliamsRetrievalService
+    public class ClaimsRetrievalService(ILogger<ClaimsRetrievalService> logger) : IClaimsRetrievalService
     {
         public Guid GetSubjectFromClaims(ClaimsPrincipal claims)
         {

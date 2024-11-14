@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FCZ8FvgDK0U=",
+  "dgSpecHash": "E5YwJlWoA9o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\aspire.hosting\\8.2.1\\aspire.hosting.8.2.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\aspire.hosting.apphost\\8.1.0\\aspire.hosting.apphost.8.1.0.nupkg.sha512",

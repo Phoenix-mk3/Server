@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using PhoenixApi.Controllers;
 using PhoenixApi.Models;
+using PhoenixApi.Models.Dto;
 using PhoenixApi.Models.Responses;
 using PhoenixApi.Models.Security;
 using PhoenixApi.Repositories;
@@ -16,16 +17,15 @@ namespace PhoenixApi.Services
 {
     public interface IAuthenticationService
     {
-        Task<string> GenerateHubToken(Guid hubId);
-        Task<bool> ClientSecretIsValid(LoginDto hubLoginDto);
         Task<Hub> GetHubByClientId(Guid clientId);
         LoginDto GenerateLoginCredentials();
         Task UpdateHubWithCredentials(Guid hubId, LoginDto loginDto);
         Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims);
         Task UpdateUserWithCredentials(ClaimsPrincipal claims, LoginDto loginDto);
         Task CheckUserInHub(ClaimsPrincipal claims, Guid hubId);
+        Task<AuthResponse> AuthorizeSubject(Guid clientId, string clientSecret, bool isHub);
     }
-    public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger, IUnitOfWork unitOfWork, ICliamsRetrievalService claimsRetrievalService, IUserRepository userRepository): IAuthenticationService
+    public class AuthenticationService(IHubRepository hubRepository, IConfiguration config, ILogger<AuthenticationService> logger, IUnitOfWork unitOfWork, IClaimsRetrievalService claimsRetrievalService, IUserRepository userRepository): IAuthenticationService
     {
         public async Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims)
         {
@@ -54,12 +54,6 @@ namespace PhoenixApi.Services
             };
 
             return userAuthResponse;
-        }
-        public async Task<string> GenerateHubToken(Guid hubId)
-        {
-            var token = await GenerateJwtToken(hubId.ToString(), AuthRole.Hub);
-
-            return token;
         }
         private string GetSigningKeyFromConfig()
         {
@@ -114,13 +108,12 @@ namespace PhoenixApi.Services
 
             return tokenHandler.WriteToken(token);
         }
-        public async Task<bool> ClientSecretIsValid(LoginDto loginDto)
+        private bool ClientSecretIsValid(Guid clientId, string clientSecretIn, string storedClientSecret)
         {
-            Hub hub = await hubRepository.GetHubByClientIdAsync(loginDto.ClientId);
 
-            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(loginDto.ClientSecret));
+            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(clientSecretIn));
             var hashedSecret = Convert.ToBase64String(hashedBytes);
-            return hashedSecret == hub.ClientSecret;
+            return hashedSecret == storedClientSecret;
         }
 
         public async Task<Hub> GetHubByClientId(Guid clientId)
@@ -199,6 +192,52 @@ namespace PhoenixApi.Services
             {
                 throw new UnauthorizedAccessException("User is not associated with the specified hub.");
             }
+        }
+
+        private async Task<SubjectDto> CreateSubject(Guid clientId, bool isHub)
+        {
+            SubjectDto subject = new();
+            if (isHub)
+            {
+                var hub = await hubRepository.GetHubByClientIdAsync(clientId) ?? throw new ArgumentNullException("Hub not found in database");
+
+                subject.Id = hub.HubId;
+                subject.ClientSecret = hub.ClientSecret!;
+                subject.ClientId = (Guid)hub.ClientId!;
+                subject.Role = AuthRole.Hub;
+            }
+            else
+            {
+                var user = await userRepository.GetUserByClientIdAsync(clientId) ?? throw new ArgumentNullException("User not found in database");
+
+                subject.Id = user.Id;
+                subject.ClientSecret = user.ClientSecret!;
+                subject.ClientId = (Guid)user.ClientId!;
+                subject.Role = AuthRole.User;
+            }
+            return subject;
+        }
+
+
+        public async Task<AuthResponse> AuthorizeSubject(Guid clientId, string clientSecret, bool isHub)
+        {
+            SubjectDto entity = await CreateSubject(clientId, isHub);
+
+            var secretValid = ClientSecretIsValid(entity.ClientId, clientSecret, entity.ClientSecret);
+            if(!secretValid)
+            {
+                throw new UnauthorizedAccessException();
+            }
+
+            var expirationTime = 12 * 60;
+
+            var authResponse = new AuthResponse()
+            {
+                AccessToken = await GenerateJwtToken(entity.Id.ToString(), entity.Role, expirationTime),
+                Expiration = DateTime.UtcNow.AddMinutes(expirationTime)
+            };
+
+            return authResponse;
         }
 
         private string HashSecret(string secret)
