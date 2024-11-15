@@ -63,6 +63,222 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PhoenixApi.Controllers.DeviceController",
+    "Method": "CreateDevice",
+    "RelativePath": "api/Device",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDto",
+        "Type": "PhoenixApi.Models.Dto.DeviceCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceController",
+    "Method": "DeleteDevice",
+    "RelativePath": "api/Device",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDto",
+        "Type": "PhoenixApi.Models.Dto.DeviceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceController",
+    "Method": "UpdateName",
+    "RelativePath": "api/Device",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nameDto",
+        "Type": "PhoenixApi.Models.Dto.UpdateNameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceController",
+    "Method": "GetHubDevices",
+    "RelativePath": "api/Device",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceController",
+    "Method": "GetAllDevices",
+    "RelativePath": "api/Device/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "GetSensorData",
+    "RelativePath": "api/DeviceData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dataId",
+        "Type": "PhoenixApi.Models.Dto.DataIdDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "GetSensorData",
+    "RelativePath": "api/DeviceData/device",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "device",
+        "Type": "PhoenixApi.Models.Dto.DeviceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "CreateNewSensorData",
+    "RelativePath": "api/DeviceData/sensor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDataDto",
+        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "UpdateSensorData",
+    "RelativePath": "api/DeviceData/sensor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newDeviceDataDto",
+        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "deviceDataId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "DeleteSensorData",
+    "RelativePath": "api/DeviceData/sensor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDataId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "CreateNewSettings",
+    "RelativePath": "api/DeviceData/settings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDataDto",
+        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "UpdateSettings",
+    "RelativePath": "api/DeviceData/settings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newDeviceDataDto",
+        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "deviceDataId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.DeviceDataController",
+    "Method": "DeleteSettings",
+    "RelativePath": "api/DeviceData/settings",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceDataId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhoenixApi.Controllers.HubController",
+    "Method": "GetSelf",
+    "RelativePath": "api/Hub",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PhoenixApi.Controllers.HubController",
     "Method": "GetAll",
     "RelativePath": "api/Hub/all",
@@ -112,132 +328,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SensorController",
-    "Method": "CreateNewSensorData",
-    "RelativePath": "api/Sensor",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "deviceDataDto",
-        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SensorController",
-    "Method": "UpdateSensorData",
-    "RelativePath": "api/Sensor",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newDeviceDataDto",
-        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "deviceDataId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SensorController",
-    "Method": "DeleteSensorData",
-    "RelativePath": "api/Sensor",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "deviceDataId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SensorController",
-    "Method": "GetSensorData",
-    "RelativePath": "api/Sensor",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SettingsController",
-    "Method": "CreateNewSettings",
-    "RelativePath": "api/Settings",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "deviceDataDto",
-        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SettingsController",
-    "Method": "UpdateSettings",
-    "RelativePath": "api/Settings",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newDeviceDataDto",
-        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "deviceDataId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SettingsController",
-    "Method": "DeleteSettings",
-    "RelativePath": "api/Settings",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "deviceDataId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PhoenixApi.Controllers.SettingsController",
-    "Method": "GetSettings",
-    "RelativePath": "api/Settings",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]

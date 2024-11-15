@@ -19,9 +19,9 @@ namespace PhoenixApi.Services
     {
         Task<Hub> GetHubByClientId(Guid clientId);
         LoginDto GenerateLoginCredentials();
-        Task UpdateHubWithCredentials(Guid hubId, LoginDto loginDto);
+        Task UpdateHubWithCredentials(Guid hubId, Guid clientId, string clientString);
         Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims);
-        Task UpdateUserWithCredentials(ClaimsPrincipal claims, LoginDto loginDto);
+        Task UpdateUserWithCredentials(ClaimsPrincipal claims, Guid clientId, string clientSecret);
         Task CheckUserInHub(ClaimsPrincipal claims, Guid hubId);
         Task<AuthResponse> AuthorizeSubject(Guid clientId, string clientSecret, bool isHub);
     }
@@ -29,7 +29,7 @@ namespace PhoenixApi.Services
     {
         public async Task<UserAuthResponse> BuildUserAuthResponse(ClaimsPrincipal claims)
         {
-            Guid hubId = claimsRetrievalService.GetSubjectFromClaims(claims);
+            Guid hubId = claimsRetrievalService.GetSubjectIdFromClaims(claims);
             Hub hub = await GetHubByHubId(hubId);
 
             User user = new User();
@@ -86,7 +86,8 @@ namespace PhoenixApi.Services
             //TESTING PURPOSES ONLY, REMOVE LATER)
             if (subject == "cbb69446-b121-4549-a4eb-b8d7384072c2")
             {
-                claims.Add(new Claim("Permission", "IsAdmin"));
+                claims.RemoveAt(claims.Count-1);
+                claims.Add(new Claim(ClaimTypes.Role, nameof(AuthRole.Admin)));
             }
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey));
@@ -108,7 +109,7 @@ namespace PhoenixApi.Services
 
             return tokenHandler.WriteToken(token);
         }
-        private bool ClientSecretIsValid(Guid clientId, string clientSecretIn, string storedClientSecret)
+        private bool ClientSecretIsValid(string clientSecretIn, string storedClientSecret)
         {
 
             var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes(clientSecretIn));
@@ -146,24 +147,34 @@ namespace PhoenixApi.Services
 
             return loginDto;
         }
-        public async Task UpdateHubWithCredentials(Guid hubId, LoginDto loginDto)
+        public async Task UpdateHubWithCredentials(Guid hubId, Guid clientId, string clientSecret)
         {
+            if(clientId == Guid.Empty || clientSecret == null)
+            {
+                throw new ArgumentNullException("ClientId or ClientSecret cannot be empty (null)!");
+            }
+
             Hub hub = await GetHubByHubId(hubId);
             if (hub.ClientId != null || hub.ClientSecret != null)
             {
                 throw new DuplicateClientInfoException($"ClientId or Secret already exists for hub {hubId}");
             }
 
-            hub.ClientId = loginDto.ClientId;
-            hub.ClientSecret = HashSecret(loginDto.ClientSecret!);
+            hub.ClientId = clientId;
+            hub.ClientSecret = HashSecret(clientSecret);
 
             await hubRepository.UpdateAsync(hubId, hub);
             await unitOfWork.SaveChangesAsync();
         }
 
-        public async Task UpdateUserWithCredentials(ClaimsPrincipal claims, LoginDto loginDto)
+        public async Task UpdateUserWithCredentials(ClaimsPrincipal claims, Guid clientId, string clientSecret)
         {
-            var userId = claimsRetrievalService.GetSubjectFromClaims(claims);
+            if (clientId == Guid.Empty || clientSecret == null)
+            {
+                throw new ArgumentNullException("ClientId or ClientSecret cannot be empty (null)!");
+            }
+
+            var userId = claimsRetrievalService.GetSubjectIdFromClaims(claims);
 
             User user = await userRepository.GetByIdAsync(userId);
             if (user.ClientId != null || user.ClientSecret != null)
@@ -171,8 +182,8 @@ namespace PhoenixApi.Services
                 throw new DuplicateClientInfoException($"ClientId or Secret already exists for user {userId}");
             }
 
-            user.ClientId = loginDto.ClientId;
-            user.ClientSecret = HashSecret(loginDto.ClientSecret!);
+            user.ClientId = clientId;
+            user.ClientSecret = HashSecret(clientSecret);
 
             await userRepository.UpdateAsync(userId, user);
             await unitOfWork.SaveChangesAsync();
@@ -180,7 +191,7 @@ namespace PhoenixApi.Services
 
         public async Task CheckUserInHub(ClaimsPrincipal claims,  Guid hubId)
         {
-            var userId = claimsRetrievalService.GetSubjectFromClaims(claims);
+            var userId = claimsRetrievalService.GetSubjectIdFromClaims(claims);
 
             var hub = await hubRepository.GetByIdAsync(hubId);
             var user = await userRepository.GetByIdAsync(userId);
@@ -221,23 +232,20 @@ namespace PhoenixApi.Services
 
         public async Task<AuthResponse> AuthorizeSubject(Guid clientId, string clientSecret, bool isHub)
         {
-            SubjectDto entity = await CreateSubject(clientId, isHub);
+            SubjectDto subject = await CreateSubject(clientId, isHub);
 
-            var secretValid = ClientSecretIsValid(entity.ClientId, clientSecret, entity.ClientSecret);
-            if(!secretValid)
+            if(!ClientSecretIsValid(clientSecret, subject.ClientSecret))
             {
-                throw new UnauthorizedAccessException();
+                throw new UnauthorizedAccessException("Client secret is invalid");
             }
 
             var expirationTime = 12 * 60;
 
-            var authResponse = new AuthResponse()
+            return new AuthResponse
             {
-                AccessToken = await GenerateJwtToken(entity.Id.ToString(), entity.Role, expirationTime),
+                AccessToken = await GenerateJwtToken(subject.Id.ToString(), subject.Role, expirationTime),
                 Expiration = DateTime.UtcNow.AddMinutes(expirationTime)
             };
-
-            return authResponse;
         }
 
         private string HashSecret(string secret)

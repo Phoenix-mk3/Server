@@ -9,7 +9,7 @@
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsActive { get; set; } = true;
         public ICollection<Device> Devices { get; set; } = [];
-        public ICollection<User>? Users { get; } = [];
+        public ICollection<User> Users { get; } = [];
 
     }
 }

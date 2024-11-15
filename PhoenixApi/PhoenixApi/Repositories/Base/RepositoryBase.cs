@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PhoenixApi.Data;
 using PhoenixApi.UnitofWork;
 
 namespace PhoenixApi.Repositories.Base
 {
     public class RepositoryBase<T, TKey> : IRepository<T, TKey> where T : class
     {
-        protected readonly DbContext _context;
+        protected readonly ApiDbContext _context;
         protected readonly DbSet<T> _dbSet;
-        public RepositoryBase(DbContext context)
+        public RepositoryBase(ApiDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
@@ -19,7 +20,7 @@ namespace PhoenixApi.Repositories.Base
             return await _dbSet.ToListAsync();
         }
 
-        public async Task<T?> GetByIdAsync(TKey id)
+        public virtual async Task<T?> GetByIdAsync(TKey id)
         {
             return await _dbSet.FindAsync(id);
         }

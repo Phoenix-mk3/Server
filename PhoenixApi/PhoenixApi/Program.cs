@@ -8,8 +8,13 @@ using System.Text;
 using Microsoft.OpenApi.Models;
 using PhoenixApi.Extensions;
 using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Authorization;
+using PhoenixApi.Configuration;
+using PhoenixApi.Models;
+using PhoenixApi.Repositories.Base;
+using Microsoft.EntityFrameworkCore;
 
-Thread.Sleep(10000);
+Thread.Sleep(5000);
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,17 +22,30 @@ builder.AddServiceDefaults();
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    });
 
 builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddSingleton<IAuthorizationHandler, AdminBypassHandler>();
 
+
+builder.Services.AddScoped(typeof(IRepository<,>), typeof(RepositoryBase<,>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IHubRepository, HubRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
+builder.Services.AddScoped<IDeviceDataRepository, DeviceDataRepository>();
 
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
 builder.Services.AddTransient<IHubService, HubService>();
 builder.Services.AddTransient<IClaimsRetrievalService, ClaimsRetrievalService>();
+builder.Services.AddTransient<IDeviceService, DeviceService>(); 
+builder.Services.AddTransient<IDeviceDataService, DeviceDataService>();
+builder.Services.AddScoped(typeof(ILookupService<>), typeof(LookupService<>));
+//builder.Services.AddTransient<IEnumLookupService<DeviceTypeEnum>, EnumLookupService<DeviceTypeEnum>>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -37,6 +55,7 @@ builder.Services.AddSwaggerGen(c =>
         Title = "jwtToken_Auth_API",
         Version = "v1"
     });
+
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -60,6 +79,7 @@ builder.Services.AddSwaggerGen(c =>
         new string[]{ } 
         }
     });
+    c.OperationFilter<RolesOperationFilter>();
 });
 
 builder.AddNpgsqlDbContext<ApiDbContext>("ApiDb");

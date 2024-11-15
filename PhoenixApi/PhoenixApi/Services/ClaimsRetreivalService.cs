@@ -5,11 +5,11 @@ namespace PhoenixApi.Services
 {
     public interface IClaimsRetrievalService
     {
-        Guid GetSubjectFromClaims(ClaimsPrincipal claimsPrincipal);
+        Guid GetSubjectIdFromClaims(ClaimsPrincipal claimsPrincipal);
     }
     public class ClaimsRetrievalService(ILogger<ClaimsRetrievalService> logger) : IClaimsRetrievalService
     {
-        public Guid GetSubjectFromClaims(ClaimsPrincipal claims)
+        public Guid GetSubjectIdFromClaims(ClaimsPrincipal claims)
         {
             if (claims == null)
             {

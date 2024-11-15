@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using PhoenixApi.Models.Security;
 using System.Text;
 
 namespace PhoenixApi.Extensions
@@ -67,7 +68,7 @@ namespace PhoenixApi.Extensions
         });
             services.AddAuthorizationBuilder()
                 .AddPolicy("HubOnly", policy => policy.RequireRole("Hub"))
-                .AddPolicy("IsAdmin", policy => policy.RequireClaim("Permission", "IsAdmin"));
+                .AddPolicy(nameof(AuthPerms.IsAdmin), policy => policy.RequireClaim("Permission", nameof(AuthPerms.IsAdmin)));
 
             return services;
         }

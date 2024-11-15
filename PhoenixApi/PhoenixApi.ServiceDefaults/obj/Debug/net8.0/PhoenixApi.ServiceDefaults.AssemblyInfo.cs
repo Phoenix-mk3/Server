@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoenixApi.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+626ed7532e8658eafe3e7282d0216302d3372c17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7317ed5c2e63633b60048d921a0902778a5d3e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoenixApi.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoenixApi.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

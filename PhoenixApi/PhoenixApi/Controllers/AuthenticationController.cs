@@ -51,7 +51,7 @@ namespace PhoenixApi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> AuthenticateSubject([FromBody] LoginDto loginDto, [FromQuery]bool isHub)
         {
-            if (loginDto == null || loginDto.ClientId == Guid.Empty || loginDto.ClientSecret == "")
+            if (loginDto == null || loginDto.ClientId == Guid.Empty || string.IsNullOrEmpty(loginDto.ClientSecret))
             {
                 return BadRequest("Request body cannot be null");
             }
@@ -59,16 +59,23 @@ namespace PhoenixApi.Controllers
             try
             {
                 AuthResponse response = await _authService.AuthorizeSubject(loginDto.ClientId, loginDto.ClientSecret, isHub);
-
                 return Ok(response);
+            }
+            catch (ArgumentNullException ex)
+            {
+                _logger.LogWarning(ex, "Client not found in database for ClientId {clientId}", loginDto.ClientId);
+                return NotFound(new { ex.Message });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                _logger.LogWarning(ex, "Unauthorized access for ClientId {clientId}", loginDto.ClientId);
+                return StatusCode(StatusCodes.Status403Forbidden, new { Message = "Invalid client secret." });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Internal error has occoured while authing the clientId {clientId}", loginDto.ClientId);
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                _logger.LogError(ex, "Internal error occurred while authorizing ClientId {clientId}", loginDto.ClientId);
+                return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred.");
             }
-
-            return StatusCode(StatusCodes.Status501NotImplemented);
         }
 
         [HttpGet("user-credentials")]
@@ -78,28 +85,20 @@ namespace PhoenixApi.Controllers
             try
             {
                 await _authService.CheckUserInHub(User, hubId);
+                LoginDto login = _authService.GenerateLoginCredentials();
+                await _authService.UpdateUserWithCredentials(User, login.ClientId, login.ClientSecret);
+                login.ClientSecret.Append(char.Parse(AuthRole.User.ToString()));
+                return Ok(login);
             }
             catch (InvalidOperationException ex)
             {
                 _logger.LogWarning(ex, "Could not find user {user} in hub {hubId}", User, hubId);
                 return NotFound(new { ex.Message });
             }
-            catch(UnauthorizedAccessException ex)
+            catch (UnauthorizedAccessException ex)
             {
-                _logger.LogError(ex, "Could not find user or hub association in databse");
+                _logger.LogError(ex, "Could not find user or hub association in database");
                 return StatusCode(StatusCodes.Status403Forbidden, new { ex.Message });
-            }
-            catch (Exception ex) // Handle unexpected exceptions
-            {
-                _logger.LogError("An internal error occurred during 'Get User Credentials'. {ex}", ex);
-                return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred.");
-            }
-
-            LoginDto login;
-            try
-            {
-                login = _authService.GenerateLoginCredentials();
-                await _authService.UpdateUserWithCredentials(User, login);
             }
             catch (KeyNotFoundException ex)
             {
@@ -113,11 +112,9 @@ namespace PhoenixApi.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogWarning("An internal error during 'Get User Credentials'. {ex} ", ex);
+                _logger.LogError("An internal error occurred during 'Get User Credentials'. {ex}", ex);
                 return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred.");
             }
-            login.ClientSecret.Append(char.Parse(AuthRole.User.ToString()));
-            return Ok(login);
         }
 
         [HttpGet("hub-credentials")]
@@ -127,7 +124,7 @@ namespace PhoenixApi.Controllers
             try
             {
                 login = _authService.GenerateLoginCredentials();
-                await _authService.UpdateHubWithCredentials(hubId, login);
+                await _authService.UpdateHubWithCredentials(hubId, login.ClientId, login.ClientSecret);
 
             }
             catch (KeyNotFoundException ex)
@@ -153,10 +150,6 @@ namespace PhoenixApi.Controllers
         public required Guid ClientId { get; set; }
         public required string ClientSecret { get; set; }
     }
-    //public class UserLoginDto
-    //{
-    //    public required string TempA
-    //}
     public class AuthResponse
     {
         public string AccessToken { get; set; }

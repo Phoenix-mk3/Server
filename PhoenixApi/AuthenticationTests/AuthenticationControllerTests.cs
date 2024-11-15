@@ -114,7 +114,7 @@ namespace AuthenticationTests
             };
 
             _mockAuthService.Setup(s => s.GenerateLoginCredentials()).Returns(expectedLoginDto);
-            _mockAuthService.Setup(s => s.UpdateHubWithCredentials(hubId, expectedLoginDto)).Returns(Task.CompletedTask);
+            //_mockAuthService.Setup(s => s.UpdateHubWithCredentials(hubId, expectedLoginDto)).Returns(Task.CompletedTask);
 
             var result = await _authController.GetHubCredentials(hubId);
 

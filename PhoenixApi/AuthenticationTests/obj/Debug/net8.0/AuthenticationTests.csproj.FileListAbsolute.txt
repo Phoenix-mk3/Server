@@ -1437,3 +1437,4 @@ C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\AuthenticationTests
 C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\AuthenticationTests\obj\Debug\net8.0\Authenti.D3D720B5.Up2Date
 C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\AuthenticationTests\obj\Debug\net8.0\AuthenticationTests.genruntimeconfig.cache
 C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\AuthenticationTests\obj\Debug\net8.0\ref\AuthenticationTests.dll
+C:\Users\chris\Source\Repos\Server\PhoenixApi\AuthenticationTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

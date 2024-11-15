@@ -1,4 +1,6 @@
-﻿namespace PhoenixApi.Models
+﻿using PhoenixApi.Models.Lookups;
+
+namespace PhoenixApi.Models
 {
     public class Device
     {
@@ -7,13 +9,9 @@
         public Guid HubId { get; set; }
         public required Hub Hub { get; set; }
         public int TypeId { get; set; }
-        public required DeviceTypeEnum Type { get; set; }
+        public required DeviceTypeLookup Type { get; set; }
         public ICollection<DeviceData> Data { get; set; } = [];
 
     }
-    public class DeviceTypeEnum
-    {
-        public int Id { get; set; }
-        public required string Name { get; set; }
-    }
+    
 }

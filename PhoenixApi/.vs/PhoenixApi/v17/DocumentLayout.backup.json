@@ -1,113 +1,205 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\",
+  "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\devicedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\devicedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\dto\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\responses\\userauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\responses\\userauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\dto\\devicedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\devicedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\authenticationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\sensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\sensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\models\\security\\authroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\security\\authroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi.apphost\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|c:\\users\\chris\\downloads\\code\\phoenixmk3\\phoenix2\\phoenixapi\\phoenixapi.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\dto\\devicedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\devicedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\devicedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\devicedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\dto\\dataiddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\dataiddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\dto\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\devicedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\devicedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\devicedatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\devicedatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\lookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\lookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\responses\\devicedataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\responses\\devicedataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\hubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\dto\\updatenamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\updatenamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\hubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\dto\\devicecreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\dto\\devicecreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\responses\\hubresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\responses\\hubresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\lookups\\devicetypelookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\lookups\\devicetypelookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\lookups\\datatypelookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\lookups\\datatypelookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\configuration\\rolesoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\configuration\\rolesoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\lookups\\unitlookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\lookups\\unitlookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\lookups\\datacategorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\lookups\\datacategorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\phoenixapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\phoenixapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\configuration\\adminbypasshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\configuration\\adminbypasshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\extensions\\authenticationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\security\\authperms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\security\\authperms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi\\models\\security\\authroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\models\\security\\authroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.generatehubcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.servicedefaults\\phoenixapi.servicedefaults.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|solutionrelative:phoenixapi.servicedefaults\\phoenixapi.servicedefaults.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.apphost\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.apphost\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A1FE8D-47B9-4A93-83C9-BDB1E8B230C0}|PhoenixApi.AppHost\\PhoenixApi.AppHost.csproj|solutionrelative:phoenixapi.apphost\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|c:\\users\\chris\\source\\repos\\server\\phoenixapi\\phoenixapi.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23C984E2-BD7F-4D37-B8D8-DFC7FEC80648}|PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj|solutionrelative:phoenixapi.servicedefaults\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -118,7 +210,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,359 +222,674 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAvwO8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:10:45.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClaimsRetreivalService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\ClaimsRetreivalService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\ClaimsRetreivalService.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\ClaimsRetreivalService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\ClaimsRetreivalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:55:06.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:33:07.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserAuthResponse.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:35:56.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AuthenticationControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationControllerTests.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
-              "RelativeToolTip": "AuthenticationTests\\AuthenticationControllerTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBYAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs*",
+              "RelativeToolTip": "AuthenticationTests\\AuthenticationControllerTests.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwHQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:05:04.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SubjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\SubjectDto.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\SubjectDto.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\SubjectDto.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\SubjectDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:44:58.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HubRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:32:57.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeviceDataDto.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:43:21.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\DeviceController.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\DeviceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:41:32.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthenticationServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationServiceTests.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationServiceTests.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationServiceTests.cs",
-              "RelativeToolTip": "AuthenticationTests\\AuthenticationServiceTests.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:47:57.196Z",
+              "WhenOpened": "2024-11-15T23:43:45.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AuthenticationServiceTests.GenerateJwtToken.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateJwtToken.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateJwtToken.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateJwtToken.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateJwtToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DeviceDataService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\DeviceDataService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\DeviceDataService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\DeviceDataService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\DeviceDataService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:09:48.222Z",
+              "WhenOpened": "2024-11-15T22:36:56.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthenticationServiceTests.GenerateHubCredentials.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\DeviceController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwDEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:09:38.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PhoenixApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PhoenixApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-07T15:16:23.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\User.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:36:03.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Hub.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Hub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:36:01.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SensorData.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\SensorData.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\SensorData.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\SensorData.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\SensorData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:12:24.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
-              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Program.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
-              "RelativeToolTip": "PhoenixApi.AppHost\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:13:12.086Z",
+              "WhenOpened": "2024-10-30T21:39:19.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "HubController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "HubRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\HubRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\HubRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:41:34.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Program.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Program.cs",
-              "RelativeToolTip": "PhoenixApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:33:04.68Z",
+              "WhenOpened": "2024-11-01T15:17:58.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\appsettings.json",
-              "RelativeDocumentMoniker": "PhoenixApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\appsettings.json",
-              "RelativeToolTip": "PhoenixApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T11:33:59.135Z",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:58:58.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.json",
-              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.json",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.json",
-              "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T10:28:56.773Z",
+              "DocumentIndex": 13,
+              "Title": "DeviceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\DeviceRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\DeviceRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\DeviceRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\DeviceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:36:59.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeviceDataDto.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\DeviceDataDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:19:34.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\DeviceService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\DeviceService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAMwEMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:36:30.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HubController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\HubController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\HubController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\HubController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:40:38.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeviceDataController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceDataController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\DeviceDataController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\DeviceDataController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\DeviceDataController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:10:56.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeviceDto.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDto.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DeviceDto.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceDto.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\DeviceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:18:32.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Program.cs",
+              "RelativeToolTip": "PhoenixApi\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAEwCcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:55:35.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T00:35:56.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeviceDataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\DeviceDataRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\DeviceDataRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\DeviceDataRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\DeviceDataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:39:04.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DeviceDataResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:08:04.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataIdDto.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DataIdDto.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DataIdDto.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DataIdDto.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\DataIdDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:36:48.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LookupService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\LookupService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\LookupService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\LookupService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\LookupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:55:05.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "AuthRoles.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthRoles.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Security\\AuthRoles.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthRoles.cs",
-              "RelativeToolTip": "PhoenixApi\\Models\\Security\\AuthRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UpdateNameDto.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\UpdateNameDto.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\UpdateNameDto.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\UpdateNameDto.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\UpdateNameDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:29:44.834Z",
+              "WhenOpened": "2024-11-15T22:24:48.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.Development.json",
-              "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T10:28:54.359Z",
+              "DocumentIndex": 16,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAvwEQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:09:28.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HubService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T14:54:40.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Device.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Device.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T00:15:03.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeviceTypeLookup.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DeviceTypeLookup.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Lookups\\DeviceTypeLookup.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DeviceTypeLookup.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Lookups\\DeviceTypeLookup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:02:02.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\User.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:51:43.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Hub.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Hub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T14:17:54.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "HubService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Services\\HubService.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\HubService.cs",
-              "RelativeToolTip": "PhoenixApi\\Services\\HubService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DeviceCreationDto.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:11:37.478Z",
+              "WhenOpened": "2024-11-15T16:19:55.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\Base\\IRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\Base\\IRepository.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\Base\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T15:18:00.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
+              "RelativeToolTip": "PhoenixApi.AppHost\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:24:20.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "PhoenixApi\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Title": "HubResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Responses\\HubResponse.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\HubResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Responses\\HubResponse.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Responses\\HubResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:32:54.983Z"
+              "WhenOpened": "2024-11-15T22:14:15.665Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\UserController.cs",
+              "DocumentIndex": 30,
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Data\\ApiDbContext.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Data\\ApiDbContext.cs",
+              "RelativeToolTip": "PhoenixApi\\Data\\ApiDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAEwDQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T00:14:47.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\Base\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Repositories\\Base\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Repositories\\Base\\RepositoryBase.cs",
+              "RelativeToolTip": "PhoenixApi\\Repositories\\Base\\RepositoryBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T15:18:01.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DataTypeLookup.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DataTypeLookup.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Lookups\\DataTypeLookup.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DataTypeLookup.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Lookups\\DataTypeLookup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:44:36.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RolesOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Configuration\\RolesOperationFilter.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Configuration\\RolesOperationFilter.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Configuration\\RolesOperationFilter.cs",
+              "RelativeToolTip": "PhoenixApi\\Configuration\\RolesOperationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:35:39.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PhoenixApi.http",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\PhoenixApi.http",
+              "RelativeDocumentMoniker": "PhoenixApi\\PhoenixApi.http",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\PhoenixApi.http",
+              "RelativeToolTip": "PhoenixApi\\PhoenixApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-15T16:49:19.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DataCategoryLookup.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DataCategoryLookup.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Lookups\\DataCategoryLookup.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\DataCategoryLookup.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Lookups\\DataCategoryLookup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:44:44.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UnitLookup.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\UnitLookup.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Lookups\\UnitLookup.cs",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Lookups\\UnitLookup.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Lookups\\UnitLookup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:44:18.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClaimsRetreivalService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\ClaimsRetreivalService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\ClaimsRetreivalService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\ClaimsRetreivalService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\ClaimsRetreivalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:43:31.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.json",
+              "RelativeDocumentMoniker": "PhoenixApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.json",
+              "RelativeToolTip": "PhoenixApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T10:15:11.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "PhoenixApi\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADgv1cAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T14:17:57.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AdminBypassHandler.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Configuration\\AdminBypassHandler.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Configuration\\AdminBypassHandler.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Configuration\\AdminBypassHandler.cs",
+              "RelativeToolTip": "PhoenixApi\\Configuration\\AdminBypassHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:58:10.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AuthenticationExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
+              "RelativeToolTip": "PhoenixApi\\Extensions\\AuthenticationExtensions.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwEYAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:59:21.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AuthPerms.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthPerms.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Security\\AuthPerms.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthPerms.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Security\\AuthPerms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:59:21.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PhoenixApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\appsettings.Development.json",
+              "RelativeToolTip": "PhoenixApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-30T23:43:58.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AuthRoles.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthRoles.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\Security\\AuthRoles.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\Security\\AuthRoles.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\Security\\AuthRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:39:23.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AuthenticationServiceTests.GenerateHubCredentials.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
+              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateHubCredentials.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:12:00.576Z"
+              "WhenOpened": "2024-10-29T21:09:46.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 45,
+              "Title": "PhoenixApi.ServiceDefaults.csproj",
+              "DocumentMoniker": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+              "RelativeDocumentMoniker": "PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+              "ToolTip": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+              "RelativeToolTip": "PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-27T07:06:01.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PhoenixApi.AppHost\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T11:14:02.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.json",
+              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.json",
+              "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T11:14:04.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PhoenixApi.AppHost\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.AppHost\\appsettings.Development.json",
+              "RelativeToolTip": "PhoenixApi.AppHost\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T11:14:07.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "Extensions.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\Extensions.cs",
               "RelativeDocumentMoniker": "PhoenixApi.ServiceDefaults\\Extensions.cs",
-              "ToolTip": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\Extensions.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\Extensions.cs",
               "RelativeToolTip": "PhoenixApi.ServiceDefaults\\Extensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:13:26.846Z"
+              "WhenOpened": "2024-10-15T09:55:32.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "4d379dd1-634f-4b57-a3ff-65955214b6f0",
+        "Display": 1,
+        "X": -274,
+        "Y": 229,
+        "Width": 2060,
+        "Height": 1130,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeviceData.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\DeviceData.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Models\\DeviceData.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Server\\PhoenixApi\\PhoenixApi\\Models\\DeviceData.cs",
+              "RelativeToolTip": "PhoenixApi\\Models\\DeviceData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:26:11.883Z",
+              "EditorCaption": ""
             }
           ]
         }

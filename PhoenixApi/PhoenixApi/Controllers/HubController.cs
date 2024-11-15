@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PhoenixApi.Models.Security;
 using PhoenixApi.Services;
 using System.Security.Claims;
 
@@ -10,8 +11,16 @@ namespace PhoenixApi.Controllers
     [ApiController]
     public class HubController(IHubService hubService) : ControllerBase
     {
+        [HttpGet]
+        [Authorize(Roles = nameof(AuthRole.Hub))]
+        public async Task<IActionResult> GetSelf()
+        {
+            var hub = await hubService.GetSingleHubAsync(User);
+            return Ok(hub);
+        }
+
         [HttpGet("all")]
-        [Authorize(Roles = "hub")]
+        [Authorize(Roles = nameof(AuthRole.Admin))]
         public async Task<IActionResult> GetAll()
         {
             var hubs = await hubService.GetAllHubsAsync();
@@ -19,7 +28,7 @@ namespace PhoenixApi.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize(Policy = "IsAdmin")]
+        [Authorize(Policy = nameof(AuthRole.Admin))]
         public async Task<IActionResult> Create([FromBody] string name)
         {
             await hubService.CreateHubAsync(name);
@@ -27,20 +36,19 @@ namespace PhoenixApi.Controllers
         }
 
         [HttpPut("update-name")]
-        [Authorize(Roles = "hub, User")]
+        [Authorize(Roles = $"{nameof(AuthRole.Hub)}, {nameof(AuthRole.User)}")]
         public async Task<IActionResult> UpdateName([FromBody] string name)
         {
             await hubService.UpdateHubName(name, User);
             return Ok();
         }
 
-
-        //Below line not implemented yet
         [HttpDelete("factory-reset")]
-        [Authorize(Roles = "hub, User")]
+        [Authorize(Roles = $"{nameof(AuthRole.Hub)}")]
         public async Task<IActionResult> FactoryReset()
         {
-            return StatusCode(StatusCodes.Status501NotImplemented);
+            await hubService.FactoryResetAsync(User);
+            return Ok();
         }
 
     }
