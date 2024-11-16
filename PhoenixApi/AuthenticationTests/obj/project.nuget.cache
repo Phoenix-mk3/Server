@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJIQ0MGFKjk=",
+  "dgSpecHash": "nelfmcwhfvo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\AuthenticationTests\\AuthenticationTests.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\aspire.npgsql.entityframeworkcore.postgresql\\8.2.1\\aspire.npgsql.entityframeworkcore.postgresql.8.2.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

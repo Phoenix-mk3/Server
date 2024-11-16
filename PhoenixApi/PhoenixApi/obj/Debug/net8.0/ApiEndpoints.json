@@ -139,9 +139,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dataId",
-        "Type": "PhoenixApi.Models.Dto.DataIdDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -155,9 +155,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "device",
-        "Type": "PhoenixApi.Models.Dto.DeviceDto",
-        "IsRequired": true
+        "Name": "DeviceId",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

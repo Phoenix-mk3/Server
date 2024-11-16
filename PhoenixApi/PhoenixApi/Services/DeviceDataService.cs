@@ -44,10 +44,13 @@ namespace PhoenixApi.Services
         public async Task<IEnumerable<DeviceDataResponse>> GetAllDeviceDataFromDevice(Guid deviceId)
         {
             var device = await deviceService.GetDeviceById(deviceId);
+
+            var deviceData = await deviceDataRepository.GetAllDataByDeviceAsync(device.DeviceId);
+
             List<DeviceDataResponse> dataResponse = new();
 
 
-            foreach(DeviceData data in device.Data)
+            foreach(DeviceData data in deviceData)
             {
                 dataResponse.Add(new DeviceDataResponse
                 {

@@ -14,7 +14,7 @@ namespace PhoenixApi.Controllers
     {
         [HttpPost("sensor")]
         [Authorize(Roles = nameof(AuthRole.Hub))]
-        public async Task<IActionResult> CreateNewSensorData([FromBody] DeviceDataDto deviceDataDto)
+        public async Task<IActionResult> CreateNewSensorData([FromBody]DeviceDataDto deviceDataDto)
         {
             await deviceDataService.AddNewData(deviceDataDto, "sensor", User);
             return Ok();
@@ -37,7 +37,7 @@ namespace PhoenixApi.Controllers
 
         [HttpGet("device")]
         [Authorize(Roles = $"{nameof(AuthRole.Hub)}, {nameof(AuthRole.User)}")]
-        public async Task<IActionResult> GetSensorData([FromBody]DeviceDto device)
+        public async Task<IActionResult> GetSensorData([FromQuery]DeviceDto device)
         {
             var deviceData = await deviceDataService.GetAllDeviceDataFromDevice(device.DeviceId);
 
@@ -46,7 +46,7 @@ namespace PhoenixApi.Controllers
 
         [HttpGet]
         [Authorize(Roles = $"{nameof(AuthRole.Hub)}, {nameof(AuthRole.User)}")]
-        public async Task<IActionResult> GetSensorData([FromBody]DataIdDto dataId)
+        public async Task<IActionResult> GetSensorData([FromQuery] DataIdDto dataId)
         {
             var deviceData = await deviceDataService.GetDeviceDataFromId(dataId.Id);
 
