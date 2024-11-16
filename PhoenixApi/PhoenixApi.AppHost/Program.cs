@@ -1,5 +1,13 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.PhoenixApi>("phoenixapi");
+var postgres = builder.AddPostgres("postgres")
+    .WithPgAdmin()
+    .WithPgWeb();
+var postgresdb = postgres.AddDatabase("ApiDb");
+
+
+
+builder.AddProject<Projects.PhoenixApi>("phoenixapi")
+    .WithReference(postgresdb);
 
 builder.Build().Run();
