@@ -14,7 +14,7 @@ namespace PhoenixApi.Controllers
     {
         [HttpPost("sensor")]
         [Authorize(Roles = nameof(AuthRole.Hub))]
-        public async Task<IActionResult> CreateNewSensorData([FromBody]DeviceDataDto deviceDataDto)
+        public async Task<IActionResult> CreateNewSensorData([FromBody]IEnumerable<DeviceDataDto> deviceDataDto)
         {
             await deviceDataService.AddNewData(deviceDataDto, "sensor", User);
             return Ok();

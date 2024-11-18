@@ -11,33 +11,36 @@ namespace PhoenixApi.Services
 {
     public interface IDeviceDataService
     {
-        Task AddNewData(DeviceDataDto deviceDataDto, string categoryIn, ClaimsPrincipal claims);
+        Task AddNewData(IEnumerable<DeviceDataDto> deviceDataDto, string categoryIn, ClaimsPrincipal claims);
         Task<IEnumerable<DeviceDataResponse>> GetAllDeviceDataFromDevice(Guid deviceId);
         Task<DeviceDataResponse> GetDeviceDataFromId(int deviceDataId);
     }
     public class DeviceDataService(IDeviceDataRepository deviceDataRepository, IUnitOfWork unitOfWork, IDeviceService deviceService, ILookupService<UnitLookup> unitLookupService, ILookupService<DataTypeLookup> typeLookupService, ILookupService<DataCategoryLookup> categoryLookupService) : IDeviceDataService
     {
-        public async Task AddNewData(DeviceDataDto deviceDataDto, string categoryIn, ClaimsPrincipal claims)
+        public async Task AddNewData(IEnumerable<DeviceDataDto> deviceDataDto, string categoryIn, ClaimsPrincipal claims)
         {
-            var devices = await deviceService.GetHubDevices(claims);
-            var device = devices.FirstOrDefault(d => d.DeviceId == deviceDataDto.DeviceId);
-
-            var unit = await unitLookupService.FindAsync(deviceDataDto.Unit);
-            var type = await typeLookupService.FindAsync(deviceDataDto.DataType);
-            var category = await categoryLookupService.FindAsync(categoryIn);
-
-
-            DeviceData data = new()
+            foreach (var devideDDto in deviceDataDto)
             {
-                Device = device,
-                Value = deviceDataDto.Value,
-                Unit = unit,
-                CreatedAt = deviceDataDto.CreatedAt,
-                Type = type,
-                Category = category
-            };
+                var devices = await deviceService.GetHubDevices(claims);
+                var device = devices.FirstOrDefault(d => d.DeviceId == devideDDto.DeviceId);
 
-            await deviceDataRepository.AddAsync(data);
+                var unit = await unitLookupService.FindAsync(devideDDto.Unit);
+                var type = await typeLookupService.FindAsync(devideDDto.DataType);
+                var category = await categoryLookupService.FindAsync(categoryIn);
+
+
+                DeviceData data = new()
+                {
+                    Device = device,
+                    Value = devideDDto.Value,
+                    Unit = unit,
+                    CreatedAt = devideDDto.CreatedAt,
+                    Type = type,
+                    Category = category
+                };
+
+                await deviceDataRepository.AddAsync(data);
+            }
             await unitOfWork.SaveChangesAsync();
         }
 

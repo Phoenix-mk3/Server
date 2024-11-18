@@ -28,7 +28,7 @@ namespace PhoenixApi.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize(Policy = nameof(AuthRole.Admin))]
+        [Authorize(Roles = nameof(AuthRole.Admin))]
         public async Task<IActionResult> Create([FromBody] string name)
         {
             await hubService.CreateHubAsync(name);
