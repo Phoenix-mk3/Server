@@ -67,7 +67,6 @@ namespace PhoenixApi.Extensions
             };
         });
             services.AddAuthorizationBuilder()
-                .AddPolicy("HubOnly", policy => policy.RequireRole("Hub"))
                 .AddPolicy(nameof(AuthPerms.IsAdmin), policy => policy.RequireClaim("Permission", nameof(AuthPerms.IsAdmin)));
 
             return services;

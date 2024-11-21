@@ -3,6 +3,7 @@
     public class DeviceDataDto
     {
         public Guid DeviceId { get; set; }
+        public Guid HubId { get; set; }
         public required string Value { get; set; }
         public required string Unit { get; set; }
         public required string DataType { get; set; }

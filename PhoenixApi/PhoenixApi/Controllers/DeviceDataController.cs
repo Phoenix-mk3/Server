@@ -10,14 +10,82 @@ namespace PhoenixApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DeviceDataController(IDeviceDataService deviceDataService) : ControllerBase
+    public class DeviceDataController(IDeviceDataService deviceDataService, ILogger<DeviceDataController> logger) : ControllerBase
     {
         [HttpPost("sensor")]
         [Authorize(Roles = nameof(AuthRole.Hub))]
-        public async Task<IActionResult> CreateNewSensorData([FromBody]IEnumerable<DeviceDataDto> deviceDataDto)
+        public async Task<IActionResult> CreateNewSensorData([FromBody] IEnumerable<DeviceDataDto> deviceDataDto)
         {
-            await deviceDataService.AddNewData(deviceDataDto, "sensor", User);
-            return Ok();
+            if (deviceDataDto == null || !deviceDataDto.Any())
+            {
+                logger.LogWarning("Device data is null or empty: {DeviceDataDto}", deviceDataDto);
+                return BadRequest("Device data cannot be null or empty.");
+            }
+
+            try
+            {
+                await deviceDataService.AddNewData(deviceDataDto, "sensor");
+                return Created(string.Empty, null);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logger.LogWarning(ex, "Validation error: {Message}", ex.Message);
+                return BadRequest(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                logger.LogWarning(ex, "Validation error: {Message}", ex.Message);
+                return BadRequest(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                logger.LogError(ex, "Operational error occurred: {Message}", ex.Message);
+                return StatusCode(500, "A server error occurred while processing the request.");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "An unexpected error occurred while adding new sensor data: {DeviceDataDto}", deviceDataDto);
+                return StatusCode(500, "An internal server error occurred.");
+            }
+        }
+
+
+        //Need identical because of roles
+        [HttpPost("settings")]
+        [Authorize(Roles = $"{nameof(AuthRole.Hub)}, {nameof(AuthRole.User)}")]
+        public async Task<IActionResult> CreateNewSettings([FromBody] IEnumerable<DeviceDataDto> deviceDataDto)
+        {
+            if (deviceDataDto == null || !deviceDataDto.Any())
+            {
+                logger.LogWarning("Device data is null or empty: {DeviceDataDto}", deviceDataDto);
+                return BadRequest("Device data cannot be null or empty.");
+            }
+
+            try
+            {
+                await deviceDataService.AddNewData(deviceDataDto, "sensor");
+                return Created(string.Empty, null);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logger.LogWarning(ex, "Validation error: {Message}", ex.Message);
+                return BadRequest(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                logger.LogWarning(ex, "Validation error: {Message}", ex.Message);
+                return BadRequest(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                logger.LogError(ex, "Operational error occurred: {Message}", ex.Message);
+                return StatusCode(500, "A server error occurred while processing the request.");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "An unexpected error occurred while adding new sensor data: {DeviceDataDto}", deviceDataDto);
+                return StatusCode(500, "An internal server error occurred.");
+            }
         }
 
 
@@ -57,12 +125,7 @@ namespace PhoenixApi.Controllers
 
         //-------Settings-----------
 
-        [HttpPost("settings")]
-        [Authorize(Roles = "Hub, User")]
-        public async Task<IActionResult> CreateNewSettings([FromBody] DeviceDataDto deviceDataDto)
-        {
-            return StatusCode(StatusCodes.Status501NotImplemented);
-        }
+        
         [HttpPut("settings")]
         [Authorize(Roles = "Hub, User")]
         public async Task<IActionResult> UpdateSettings([FromBody] DeviceDataDto newDeviceDataDto, int deviceDataId)

@@ -15,6 +15,7 @@ namespace PhoenixApi.Services
         Task FactoryResetAsync(ClaimsPrincipal claims);
         Task<IEnumerable<Hub>> GetAllHubsAsync();
         Task<Hub> GetSingleHubAsync(ClaimsPrincipal claims);
+        Task<Hub> GetSingleHubAsync(Guid hubId);
         Task UpdateHubName(string name, ClaimsPrincipal claims);
     }
     public class HubService(IHubRepository hubRepository, IUnitOfWork unitOfWork, IClaimsRetrievalService claimsRetrievalService) : IHubService
@@ -28,6 +29,11 @@ namespace PhoenixApi.Services
         public async Task<Hub> GetSingleHubAsync(ClaimsPrincipal claims)
         {
             var hubId = claimsRetrievalService.GetSubjectIdFromClaims(claims);
+            Hub hub = await hubRepository.GetByIdAsync(hubId) ?? throw new ArgumentNullException(nameof(hubId), "Hub not found!");
+            return hub;
+        }
+        public async Task<Hub> GetSingleHubAsync(Guid hubId)
+        {
             Hub hub = await hubRepository.GetByIdAsync(hubId) ?? throw new ArgumentNullException(nameof(hubId), "Hub not found!");
             return hub;
         }

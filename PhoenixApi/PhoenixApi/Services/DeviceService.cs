@@ -13,6 +13,7 @@ namespace PhoenixApi.Services
         Task<IEnumerable<Device>> GetAllDevices();
         Task<Device> GetDeviceById(Guid deviceId);
         Task<IEnumerable<Device>> GetHubDevices(ClaimsPrincipal claims);
+        Task<IEnumerable<Device>> GetHubDevices(Guid hubId);
         Task RemoveDeviceAsync(Guid deviceId);
         Task UpdateName(string name, Guid deviceId);
     }
@@ -58,6 +59,12 @@ namespace PhoenixApi.Services
         public async Task<IEnumerable<Device>> GetHubDevices(ClaimsPrincipal claims)
         {
             var hub = await hubService.GetSingleHubAsync(claims);
+            var devices = hub.Devices;
+            return devices;
+        }
+        public async Task<IEnumerable<Device>> GetHubDevices(Guid hubId)
+        {
+            var hub = await hubService.GetSingleHubAsync(hubId);
             var devices = hub.Devices;
             return devices;
         }
