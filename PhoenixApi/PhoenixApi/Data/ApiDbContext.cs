@@ -81,7 +81,6 @@ namespace PhoenixApi.Data
         }
 
     }
-    //FOR TESTING;;; REMOVE
     public static class DbInit
     {
         public static void Initialize(ApiDbContext context)
@@ -89,6 +88,7 @@ namespace PhoenixApi.Data
             if (context.Hubs.Any())
                 return;
 
+            //statically set a hub and clientid + secret THIS IS FOR TESTING ONLY REMOVE BEFORE REAL PRODUCTION SETTING.
             Hub newHub = new()
             {
                 HubId = Guid.Parse("cbb69446-b121-4549-a4eb-b8d7384072c2"),

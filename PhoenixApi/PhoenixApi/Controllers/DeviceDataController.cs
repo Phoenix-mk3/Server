@@ -89,25 +89,9 @@ namespace PhoenixApi.Controllers
                 return StatusCode(500, "An internal server error occurred.");
             }
         }
-
-
-        [HttpPut("sensor")]
-        [Authorize(Roles = "Hub")]
-        public async Task<IActionResult> UpdateSensorData([FromBody] DeviceDataDto newDeviceDataDto, int deviceDataId)
-        {
-            return StatusCode(StatusCodes.Status501NotImplemented);
-        }
-        [HttpDelete("sensor")]
-        [Authorize(Roles = "User")]
-        public async Task<IActionResult> DeleteSensorData(int deviceDataId)
-        {
-            return StatusCode(StatusCodes.Status501NotImplemented);
-        }
-
-
         [HttpGet("device")]
         [Authorize(Roles = $"{nameof(AuthRole.Hub)}, {nameof(AuthRole.User)}")]
-        public async Task<IActionResult> GetSensorData([FromQuery]DeviceDto device)
+        public async Task<IActionResult> GetSensorData([FromQuery] DeviceDto device)
         {
             var deviceData = await deviceDataService.GetAllDeviceDataFromDevice(device.DeviceId);
 
@@ -124,6 +108,20 @@ namespace PhoenixApi.Controllers
         }
 
 
+        //Not implemented yet, due to no critical importance for system to work
+
+        [HttpPut("sensor")]
+        [Authorize(Roles = "Hub")]
+        public async Task<IActionResult> UpdateSensorData([FromBody] DeviceDataDto newDeviceDataDto, int deviceDataId)
+        {
+            return StatusCode(StatusCodes.Status501NotImplemented);
+        }
+        [HttpDelete("sensor")]
+        [Authorize(Roles = "User")]
+        public async Task<IActionResult> DeleteSensorData(int deviceDataId)
+        {
+            return StatusCode(StatusCodes.Status501NotImplemented);
+        }
 
         //-------Settings-----------
 
