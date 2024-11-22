@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|c:\\users\\chris\\source\\repos\\phoenix2\\phoenixapi\\authenticationtests\\service\\authenticationservicetests.updateuserwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F068C9A-FEDC-4B30-AD98-5C20A76AD305}|AuthenticationTests\\AuthenticationTests.csproj|solutionrelative:authenticationtests\\service\\authenticationservicetests.updateuserwithcredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\phoenix2\\phoenixapi\\phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\services\\claimsretreivalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|solutionrelative:phoenixapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E0B44E4-21B3-4ABC-8C21-6391F9882CBF}|PhoenixApi\\PhoenixApi.csproj|c:\\users\\chris\\source\\repos\\phoenix2\\phoenixapi\\phoenixapi\\controllers\\devicedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -257,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Services\\AuthenticationService.cs",
@@ -270,20 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthenticationServiceTests.AuthorizeSubject.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
-              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
-              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T07:24:00.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthenticationServiceTests.BuildUserAuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.BuildUserAuthResponse.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.BuildUserAuthResponse.cs",
@@ -296,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthenticationServiceTests.GenerateLoginCredentials.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateLoginCredentials.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GenerateLoginCredentials.cs",
@@ -309,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AuthenticationServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationServiceTests.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationServiceTests.cs",
@@ -322,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthenticationControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\AuthenticationControllerTests.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\AuthenticationControllerTests.cs",
@@ -335,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthenticationServiceTests.CheckUserInHub.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.CheckUserInHub.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.CheckUserInHub.cs",
@@ -348,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthenticationServiceTests.UpdateHubWithCredentials.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateHubWithCredentials.cs",
@@ -361,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthenticationServiceTests.UpdateUserWithCredentials.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateUserWithCredentials.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.UpdateUserWithCredentials.cs",
@@ -374,7 +361,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAASwB4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:09:28.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "AuthenticationServiceTests.AuthorizeSubject.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
+              "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
+              "RelativeToolTip": "AuthenticationTests\\Service\\AuthenticationServiceTests.AuthorizeSubject.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:24:00.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuthenticationServiceTests.GetHubByClientId.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
               "RelativeDocumentMoniker": "AuthenticationTests\\Service\\AuthenticationServiceTests.GetHubByClientId.cs",
@@ -387,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "PhoenixApi.AppHost\\Program.cs",
@@ -400,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DeviceData.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\DeviceData.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\DeviceData.cs",
@@ -413,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UserAuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\UserAuthResponse.cs",
@@ -422,18 +435,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T07:00:19.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "PhoenixApi\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAASwB4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T21:09:28.922Z"
             },
             {
               "$type": "Document",
@@ -449,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ClaimsRetreivalService.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Services\\ClaimsRetreivalService.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Services\\ClaimsRetreivalService.cs",
@@ -461,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Program.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Program.cs",
@@ -473,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DeviceDataResponse.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\DeviceDataResponse.cs",
@@ -485,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "HubResponse.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Responses\\HubResponse.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Responses\\HubResponse.cs",
@@ -497,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Hub.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Hub.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Hub.cs",
@@ -509,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Device.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Device.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Device.cs",
@@ -521,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DataIdDto.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DataIdDto.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DataIdDto.cs",
@@ -533,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "DeviceCreationDto.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\Dto\\DeviceCreationDto.cs",
@@ -545,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "PhoenixApi\\Models\\User.cs",
