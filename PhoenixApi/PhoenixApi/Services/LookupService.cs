@@ -31,7 +31,29 @@ namespace PhoenixApi.Services
         private async Task<T> GetByNameAsync(string key)
         {
             var entities = await repository.GetAllAsync();
-            return entities.FirstOrDefault(e => EF.Property<string>(e, "Name") == key || EF.Property<string>(e, "ShortName") == key);
+            var entity = entities.FirstOrDefault(e =>
+            {
+                // Use reflection to get the Name property
+                var nameProperty = e.GetType().GetProperty("Name");
+                var nameValue = nameProperty?.GetValue(e)?.ToString();
+
+                // Compare the Name value with the key
+                return nameValue == key;
+            });
+
+            if (entity == null)
+            {
+                entity = entities.FirstOrDefault(e =>
+                {
+                    // Use reflection to get the Name property
+                    var nameProperty = e.GetType().GetProperty("ShortName");
+                    var nameValue = nameProperty?.GetValue(e)?.ToString();
+
+                    // Compare the Name value with the key
+                    return nameValue == key;
+                });
+            }
+            return entity;
         }
 
         private async Task<T> GetByIdAsync(int intKey)

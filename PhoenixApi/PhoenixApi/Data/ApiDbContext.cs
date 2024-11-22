@@ -37,15 +37,17 @@ namespace PhoenixApi.Data
 
 
             modelBuilder.Entity<UnitLookup>().HasData(
-                new UnitLookup { Id = 1, Name = "kilogram", ShortName = "kg" },
-                new UnitLookup { Id = 2, Name = "meter", ShortName = "m" },
-                new UnitLookup { Id = 3, Name = "hectopascal", ShortName = "hpa"}
+                new UnitLookup { Id = 1, Name = "", ShortName = "" },
+                new UnitLookup { Id = 2, Name = "kilogram", ShortName = "kg" },
+                new UnitLookup { Id = 3, Name = "hectopascal", ShortName = "hpa"},
+                new UnitLookup { Id = 4, Name = "celcius", ShortName = "C" },
+                new UnitLookup { Id = 5, Name = "percent", ShortName = "%" }
             );
 
             modelBuilder.Entity<DataTypeLookup>().HasData(
-                new DataTypeLookup { Id = 1, Name = "int" },
-                new DataTypeLookup { Id = 2, Name = "string" },
-                new DataTypeLookup { Id = 3, Name = "long" }
+                new DataTypeLookup { Id = 1, Name = "numeric" },
+                new DataTypeLookup { Id = 2, Name = "text" },
+                new DataTypeLookup { Id = 3, Name = "time" }
             );
 
             modelBuilder.Entity<DataCategoryLookup>().HasData(
@@ -79,7 +81,6 @@ namespace PhoenixApi.Data
         }
 
     }
-    //FOR TESTING;;; REMOVE
     public static class DbInit
     {
         public static void Initialize(ApiDbContext context)
@@ -87,6 +88,7 @@ namespace PhoenixApi.Data
             if (context.Hubs.Any())
                 return;
 
+            //statically set a hub and clientid + secret THIS IS FOR TESTING ONLY REMOVE BEFORE REAL PRODUCTION SETTING.
             Hub newHub = new()
             {
                 HubId = Guid.Parse("cbb69446-b121-4549-a4eb-b8d7384072c2"),

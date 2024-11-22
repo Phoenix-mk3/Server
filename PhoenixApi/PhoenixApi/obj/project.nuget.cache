@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nKEm9iEyUJg=",
+  "dgSpecHash": "JnXUKjqSJRI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
+  "projectFilePath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\aspire.npgsql.entityframeworkcore.postgresql\\8.2.1\\aspire.npgsql.entityframeworkcore.postgresql.8.2.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",

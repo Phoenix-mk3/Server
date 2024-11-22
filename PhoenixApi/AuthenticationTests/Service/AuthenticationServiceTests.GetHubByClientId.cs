@@ -10,7 +10,6 @@ namespace AuthenticationTests.Service
 {
     public partial class AuthenticationServiceTests
     {
-        #region GetHubByClientId Tests
         [Fact]
         public async Task GetHubByClientId_ValidClientId_ReturnsHub()
         {
@@ -51,6 +50,5 @@ namespace AuthenticationTests.Service
             await Assert.ThrowsAsync<Exception>(() => _authService.GetHubByClientId(clientId));
             _mockHubRepository.Verify(repo => repo.GetHubByClientIdAsync(clientId), Times.Once());
         }
-        #endregion
     }
 }

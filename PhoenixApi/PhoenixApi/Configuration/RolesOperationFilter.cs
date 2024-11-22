@@ -5,8 +5,15 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 namespace PhoenixApi.Configuration
 {
     /// <summary>
-    /// To add Swagger desc for required roles!
+    /// Operation filter for Swagger to append required roles to the endpoint description.
     /// </summary>
+    /// <remarks>
+    /// This filter checks for any roles specified in the [Authorize] attribute on API endpoints
+    /// and appends a formatted list of these roles to the endpoint's description in the Swagger UI.
+    /// 
+    /// This ensures that developers and consumers of the API can easily see what roles are required
+    /// to access each endpoint directly from the Swagger documentation.
+    /// </remarks>
     public class RolesOperationFilter : IOperationFilter
     {
         

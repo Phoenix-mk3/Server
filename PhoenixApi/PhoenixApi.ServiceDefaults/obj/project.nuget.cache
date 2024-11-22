@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vH74oxvjYA4=",
+  "dgSpecHash": "NAkxDWxAMzU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Source\\Repos\\Server\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+  "projectFilePath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

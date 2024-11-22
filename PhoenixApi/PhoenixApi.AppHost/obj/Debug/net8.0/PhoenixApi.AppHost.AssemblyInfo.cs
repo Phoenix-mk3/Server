@@ -24,7 +24,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c461e2373a03b2519a6d06fa9a7f37ceff4d94f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c23e5d2ac6d1135774ddc9c7f8cef1dd3e462baa")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoenixApi.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
