@@ -61,6 +61,8 @@ namespace PhoenixApi.Controllers
                 return BadRequest("Device data cannot be null or empty.");
             }
 
+            logger.LogInformation("Logging deviceData accepted.");
+
             try
             {
                 await deviceDataService.AddNewData(deviceDataDto, "sensor");

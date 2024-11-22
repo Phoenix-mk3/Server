@@ -8,6 +8,7 @@ using PhoenixApi.Repositories;
 using PhoenixApi.UnitofWork;
 using System.Globalization;
 using System.Security.Claims;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PhoenixApi.Services
 {
@@ -48,6 +49,8 @@ namespace PhoenixApi.Services
                     };
 
                     await deviceDataRepository.AddAsync(data);
+
+                    logger.LogInformation("Device Data added {data}", data);
                 }
                 catch (ArgumentException argEx)
                 {
@@ -82,17 +85,24 @@ namespace PhoenixApi.Services
 
             List<DeviceDataResponse> dataResponse = new();
 
+            
 
-            foreach(DeviceData data in deviceData)
+            foreach (DeviceData data in deviceData)
             {
+                var category = await categoryLookupService.FindAsync(data.CategoryId.ToString());
+                var unit = await unitLookupService.FindAsync(data.UnitId.ToString());
+                var type = await typeLookupService.FindAsync(data.TypeId.ToString());
+                logger.LogInformation("Data retrieved {data}", data);
+
+                logger.LogDebug("category {categoryId}", data.CategoryId);
                 dataResponse.Add(new DeviceDataResponse
                 {
                     Id = data.Id,
                     DeviceId = data.DeviceId,
-                    Category = data.Category,
+                    Category = category,
                     CreatedAt = data.CreatedAt,
-                    Type = data.Type,
-                    Unit = data.Unit,
+                    Type = type,
+                    Unit = unit,
                     Value = data.Value
                 });
             }
@@ -103,14 +113,22 @@ namespace PhoenixApi.Services
         {
             DeviceData data = await deviceDataRepository.GetByIdAsync(id);
 
+            var category = await categoryLookupService.FindAsync(data.CategoryId.ToString());
+            var unit = await unitLookupService.FindAsync(data.UnitId.ToString());
+            var type = await typeLookupService.FindAsync(data.TypeId.ToString());
+
+            logger.LogInformation("Data retrieved {data}", data);
+
+            logger.LogDebug("category {categoryId}", data.CategoryId);
+
             DeviceDataResponse dataResponse = new()
             {
                 Id = data.Id,
                 DeviceId = data.DeviceId,
-                Category = data.Category,
+                Category = category,
                 CreatedAt = data.CreatedAt,
-                Type = data.Type,
-                Unit = data.Unit,
+                Type = type,
+                Unit = unit,
                 Value = data.Value
 
             };

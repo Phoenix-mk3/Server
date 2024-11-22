@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoenixApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9c45beab863e1c930fce210276555079e8b828")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c77a0b672466c6aee144513917b98532408491d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoenixApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoenixApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,5 +7,5 @@ namespace Projects;
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
 public class PhoenixApi : global::Aspire.Hosting.IProjectMetadata
 {
-    public string ProjectPath => """C:\Users\chris\source\repos\Phoenix2\PhoenixApi\PhoenixApi\PhoenixApi.csproj""";
+    public string ProjectPath => """C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\PhoenixApi\PhoenixApi.csproj""";
 }

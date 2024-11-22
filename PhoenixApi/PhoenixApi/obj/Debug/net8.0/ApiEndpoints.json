@@ -225,7 +225,7 @@
     "Parameters": [
       {
         "Name": "deviceDataDto",
-        "Type": "PhoenixApi.Models.DtoIn.DeviceDataDto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PhoenixApi.Models.DtoIn.DeviceDataDto, PhoenixApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],

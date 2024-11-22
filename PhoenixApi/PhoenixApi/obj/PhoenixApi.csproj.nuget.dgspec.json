@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj": {}
+    "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj": {
+    "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
         "projectName": "PhoenixApi.ServiceDefaults",
-        "projectPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
+        "projectPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,8 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -99,18 +98,23 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     },
-    "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj": {
+    "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
         "projectName": "PhoenixApi",
-        "projectPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
+        "projectPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\PhoenixApi.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi\\obj\\",
+        "outputPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -126,15 +130,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj": {
-                "projectPath": "C:\\Users\\chris\\source\\repos\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj"
+              "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj": {
+                "projectPath": "C:\\Users\\chris\\Downloads\\Code\\PhoenixMk3\\Phoenix2\\PhoenixApi\\PhoenixApi.ServiceDefaults\\PhoenixApi.ServiceDefaults.csproj"
               }
             }
           }
@@ -186,6 +189,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.8, 8.0.8]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -194,7 +203,12 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

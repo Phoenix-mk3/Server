@@ -8,5 +8,5 @@ namespace Projects;
 public class PhoenixApi_AppHost
 {
     private PhoenixApi_AppHost() { }
-    public static string ProjectPath => """C:\Users\chris\source\repos\Phoenix2\PhoenixApi\PhoenixApi.AppHost""";
+    public static string ProjectPath => """C:\Users\chris\Downloads\Code\PhoenixMk3\Phoenix2\PhoenixApi\PhoenixApi.AppHost""";
 }
